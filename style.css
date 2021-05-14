@@ -55,14 +55,19 @@ i {
 }
 
 .rechercher {
-    height: 40px;
-    width: 90px;
+    height: 26px;
+    width: 80px;
     background-color: #0065FC;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
     font-size: 12px;
     color: white;
     padding-left: 10px;
+    padding-top: 14px;
+}
+
+.content {
+    display: flex;
 }
 
 .research {
@@ -99,10 +104,27 @@ i {
     height: 40px;
     border-radius: 30px;
     background-color: #DEEBFF ;
-    margin: 2px;
+    margin-left: 0px;
     size: 20px;
     color:#0065FC;
+    margin-top: 0px;
     
+}
+
+#bill {
+    margin-left: 25%;
+}
+
+#child {
+    margin-left: 35%;
+}
+
+#heart {
+    margin-left: 30%;
+}
+
+#dog {
+    margin-left: 30%;
 }
 
 #filter {
@@ -116,7 +138,7 @@ i {
     padding-top: 30px;
     background-color: #F2F2F2;
     border-radius: 20px;
-    width: 800px;
+    width: 60%;
 }
 
 .title{
@@ -127,14 +149,15 @@ i {
 .appart_photo {
     width: 200px;
     height: 200px;
-    margin: 20px;
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px;
+    margin: 2px;
+    padding: 20px;
+    border-radius: 20px;
 }
 
+
+
 .apparts{
-    
+    border-radius: 20px;
 }
 
 .describe {
@@ -150,4 +173,19 @@ i {
      padding-bottom: 20px;
      padding-left: 20px;
      font-weight: bolder;
+ }
+
+ .rated {
+    margin-top: 30px;
+    padding-top: 30px; 
+    padding-left: 20px;
+    margin-right: 30px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    width: 100%;
+ }
+
+ .popular {
+    width: 40px;
+    height: 40px; 
  }
