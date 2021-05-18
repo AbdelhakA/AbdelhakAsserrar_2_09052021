@@ -3,7 +3,8 @@
 
 
 body {
-    padding: 25px;
+    margin: 0px;
+    pading: 25px;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -54,7 +55,7 @@ i {
     
 }
 
-.rechercher {
+.rechecher {
     height: 26px;
     width: 80px;
     background-color: #0065FC;
@@ -64,6 +65,13 @@ i {
     color: white;
     padding-left: 10px;
     padding-top: 14px;
+}
+
+.rechercher {
+    background-color: #0065FC;
+    color: white;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .content {
@@ -188,4 +196,43 @@ i {
  .popular {
     width: 40px;
     height: 40px; 
+ }
+
+ .apparts {
+     border: 3px solid black;
+ }
+
+ .apparts img {
+     border-top-left-radius: 25px; 
+     border-top-right-radius: 25px;
+ }
+
+ .activities {
+    margin-left: 25px; 
+    margin-top: 30px;
+    display: flex;
+ }
+
+ footer {
+     padding-left: 20px;
+     padding-bottom: 25px;
+     margin-top: 30px;
+     display: flex;
+     background-color: #F2F2F2;
+ }
+
+ h4 {
+     font-size: bolder;
+ }
+
+ .about {
+     margin-left: 25px;
+ }
+
+ .ourhouses {
+    margin-left: 20%;
+ }
+
+ .assistance {
+    margin-left: 20%;
  }
