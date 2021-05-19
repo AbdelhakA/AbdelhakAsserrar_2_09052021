@@ -210,9 +210,68 @@ i {
  .activities {
     margin-left: 25px; 
     margin-top: 30px;
-    display: flex;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
  }
 
+.vieuxport {
+    margin-right: 20px;
+     width: 230px;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+     grid-row-start: 1;
+ }
+
+ .pomegues {
+    margin-right: 20px;
+    width: 230px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.frioul {
+    margin-right: 20px;
+    width: 230px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.calanques {
+    margin-right: 20px;
+    width: 230px;
+    height: 2fr;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    grid-row-start: 1;
+    
+}
+
+.notredame {
+    margin-right: 20px;
+    width: 230px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+   
+}
+
+.longchamp {
+    margin-right: 20px;
+    width: 230px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+
+.listactivites {
+    
+    height: 150px;
+}
+ 
  footer {
      padding-left: 20px;
      padding-bottom: 25px;
