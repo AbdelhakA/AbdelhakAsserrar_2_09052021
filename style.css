@@ -154,58 +154,119 @@ i {
     font-weight: bolder;
 }
 
-.appart_photo {
+.choice {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cannebiere {
+    background-image: url(/photos//lacannebiere.jpg);
     width: 200px;
     height: 200px;
     margin: 2px;
-    padding: 20px;
+    padding: 0px;
     border-radius: 20px;
-}
-
-
-
-.apparts{
-    border-radius: 20px;
-}
-
-.describe {
-    background-color: white;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     
-}
+ }
 
-.choice {
-    display:flex;
-    flex-wrap: wrap-reverse;
-}
+ .desc {
+    background-color: white;
+ }
+
+ .port {
+    background-image: url(/photos/hotelduport.jpg);
+    background-position: top;
+    width: 200px;
+    height: 200px;
+    margin: 2px;
+    padding: 0px;
+    border-radius: 20px;
+    margin: 25px;
+ }
+
+ .mouettes {
+    background-image: url(/photos/lesmouettes.jpg);
+    width: 200px;
+    height: 200px;
+    margin: 2px;
+    padding: 0px;
+    border-radius: 20px;
+    margin: 25px;
+ }
+
+ .mer {
+    background-image: url(/photos/delamer.jpg);
+    width: 200px;
+    height: 200px;
+    margin: 2px;
+    padding: 0px;
+    border-radius: 20px;
+    margin: 25px;
+ }
+
+ .panier {
+    background-image: url(/photos/lepanier.jpg);
+    width: 200px;
+    height: 200px;
+    margin: 2px;
+    padding: 0px;
+    border-radius: 20px;
+    margin: 25px;
+ }
+
+ .amina {
+    background-image: url(/photos/amina.jpg);
+    width: 200px;
+    height: 200px;
+    margin: 2px;
+    padding: 0px;
+    border-radius: 20px;
+    margin: 25px;
+ }
+
+
  .more{
      padding-bottom: 20px;
-     padding-left: 20px;
+     padding-left: 0px;
      font-weight: bolder;
  }
 
  .rated {
+ 
+ }
+
+ .populaires{
     margin-top: 30px;
     padding-top: 30px; 
     padding-left: 20px;
     margin-right: 30px;
     background-color: #F2F2F2;
     border-radius: 20px;
-    width: 100%;
+    width: 30%;
  }
-
+ 
  .popular {
     width: 40px;
     height: 40px; 
  }
 
- .apparts {
-     border: 3px solid black;
+ .picpop {
+    width: 200px;
+    height: 200px;
+    margin: 2px;
+    padding: 20px;
+    border-radius: 20px;
  }
 
- .apparts img {
+
+ /*.apparts img {
      border-top-left-radius: 25px; 
-     border-top-right-radius: 25px;
- }
+     border-top-right-radius: 25px;*/
+ 
 
  .activities {
     margin-left: 25px; 
