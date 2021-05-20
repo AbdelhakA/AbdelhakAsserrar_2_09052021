@@ -4,7 +4,7 @@
 
 body {
     margin: 0px;
-    pading: 25px;
+    padding-top: 25px;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -12,19 +12,29 @@ body {
    width: 100px;
 }
 
+.intro {
+    padding-left: 25px;
+}
+
+.research {
+    padding-left: 25px;
+}
+
 .main {
     display:flex;
+    padding-left: 25px;
 }
 
 .menu {
     right: 0px;
     display: flex;
-    
+    padding-left: 25px;
 }
 
 .rubriques {
     margin-right: 60px;
     float: right;
+
 }
 
 .main {
@@ -52,7 +62,6 @@ i {
     margin-top: 12px;
     margin-left: 20px;
     width: 40px;
-    
 }
 
 .rechecher {
@@ -68,11 +77,12 @@ i {
 }
 
 .rechercher {
-    background-color: #0065FC;
-    color: white;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
+    background-color: #0065FC; 
+    color: white; 
+    border-bottom-right-radius: 15px; 
+    border-top-right-radius: 15px; 
 }
+   
 
 .content {
     display: flex;
@@ -86,6 +96,7 @@ i {
 .filtres {
     display: flex;
     margin-top: 30px;
+    padding-left: 25px;
 }
 
 .bullescriteres {
@@ -140,13 +151,15 @@ i {
 }
 
 .accomodations {
-    padding-left: 20px;
+    padding-left: 0px;
+    padding-right: 30px;
     margin-right: 30px;
     margin-top: 30px;
     padding-top: 30px;
     background-color: #F2F2F2;
     border-radius: 20px;
-    width: 60%;
+    width: 57%;
+    margin-left: 30px;
 }
 
 .title{
@@ -162,106 +175,206 @@ i {
 .cannebiere {
     background-image: url(/photos//lacannebiere.jpg);
     width: 200px;
-    height: 200px;
-    margin: 2px;
+    height: 180px;
+
     padding: 0px;
     border-radius: 20px;
-    margin: 25px;
+    margin-left: 30px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    
+    border: 5px solid white;
+    box-shadow: 5px 3px 1px rgb(235, 235, 235);
  }
 
  .desc {
     background-color: white;
+    font-size: small;
+    padding-left: 4px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+ }
+
+ .name {
+     margin-top: 3px;
+     font-weight: bolder;
+     margin-bottom: 3px;
+ }
+
+ .price {
+     margin-top: 1px;
+     margin-bottom: 3px;
+ }
+
+ .note {
+
  }
 
  .port {
     background-image: url(/photos/hotelduport.jpg);
-    background-position: top;
     width: 200px;
-    height: 200px;
-    margin: 2px;
+    height: 180px;
     padding: 0px;
     border-radius: 20px;
-    margin: 25px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 5px solid white;
+    box-shadow: 5px 3px 1px rgb(235, 235, 235);
  }
 
  .mouettes {
     background-image: url(/photos/lesmouettes.jpg);
     width: 200px;
-    height: 200px;
-    margin: 2px;
+    height: 180px;
     padding: 0px;
     border-radius: 20px;
-    margin: 25px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 5px solid white;
+    box-shadow: 5px 3px 1px rgb(235, 235, 235);
  }
 
  .mer {
     background-image: url(/photos/delamer.jpg);
     width: 200px;
-    height: 200px;
-    margin: 2px;
+    height: 180px;
     padding: 0px;
     border-radius: 20px;
-    margin: 25px;
+    margin-left: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 5px solid white;
+    box-shadow: 5px 3px 1px rgb(235, 235, 235);
  }
 
  .panier {
     background-image: url(/photos/lepanier.jpg);
     width: 200px;
-    height: 200px;
-    margin: 2px;
+    height: 180px;
     padding: 0px;
     border-radius: 20px;
-    margin: 25px;
+    margin-left: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 5px solid white;
+    box-shadow: 5px 3px 1px rgb(235, 235, 235);
  }
 
  .amina {
     background-image: url(/photos/amina.jpg);
     width: 200px;
-    height: 200px;
-    margin: 2px;
+    height: 180px;
     padding: 0px;
     border-radius: 20px;
-    margin: 25px;
+    margin-left: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 5px solid white;
+    box-shadow: 5px 3px 1px rgb(235, 235, 235);
  }
 
 
- .more{
-     padding-bottom: 20px;
-     padding-left: 0px;
+ .more {
+     padding-top: 30px;
      font-weight: bolder;
+     padding-left: 30px;
  }
 
  .rated {
- 
+    margin-left: 30px;
  }
 
  .populaires{
     margin-top: 30px;
-    padding-top: 30px; 
-    padding-left: 20px;
+    padding-top: 5px; 
+    padding-left: 0px;
     margin-right: 30px;
     background-color: #F2F2F2;
     border-radius: 20px;
     width: 30%;
  }
+
+ .entete {
+     display: flex;
+     justify-content: space-between;
+ }
  
+.fa-chart-line {
+    float: right;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
  .popular {
     width: 40px;
     height: 40px; 
  }
 
- .picpop {
-    width: 200px;
-    height: 200px;
-    margin: 2px;
-    padding: 20px;
-    border-radius: 20px;
+.best {
+    
+}
+
+ .descpopu {
+    background-color: white;
+    font-size: small;
+    padding-left: 4px;
+    padding-right: 50px;
+    padding-top: 5px;;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
  }
 
+ .lesoleil {
+    background-image: url(/photos/lesoleil.jpg);
+    width: 320px;
+    height: 150px;
+    margin: 2px;
+    padding: 0px;
+    border-radius: 20px;
+    margin: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border: 5px solid white;
+ }
+
+ .coeur {
+    background-image: url(/photos/aucoeur.jpg);
+    width: 320px;
+    height: 150px;
+    margin: 2px;
+    padding: 0px;
+    border-radius: 20px;
+    margin: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border: 5px solid white;
+ }
+
+ .bleuetblanc {
+    background-image: url(/photos/bleuetblanc.jpg);
+    width: 320px;
+    height: 150px;
+    margin: 2px;
+    padding: 0px;
+    border-radius: 20px;
+    margin: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border: 5px solid white;
+ }
 
  /*.apparts img {
      border-top-left-radius: 25px; 
