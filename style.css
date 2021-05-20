@@ -390,54 +390,113 @@ i {
     grid-template-rows: 1fr 1fr;
  }
 
-.vieuxport {
-    margin-right: 20px;
-     width: 230px;
-     border-top-left-radius: 10px;
-     border-top-right-radius: 10px;
+ .descactivites {
+    background-color: white;
+    font-size: small;
+    padding-left: 20px;
+    padding-right: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+ }
+
+.levieuxport {
+    background-image: url(/photos/vieuxport.jpg);
+    width: 250px;
+    height: 180px;
+    padding: 0px;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 5px solid white;
+    box-shadow: 5px 3px 1px rgb(235, 235, 235);
      grid-row-start: 1;
  }
 
  .pomegues {
-    margin-right: 20px;
-    width: 230px;
-    border-top-left-radius: 10px;
+    background-image: url(/photos/pomegues.jpg);
+    width: 250px;
+    height: 180px;
+    padding: 0px;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 5px solid white;
+    box-shadow: 5px 3px 1px rgb(235, 235, 235);
     border-top-right-radius: 10px;
 }
 
 .frioul {
-    margin-right: 20px;
-    width: 230px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    background-image: url(/photos/frioul.jpg);
+    width: 250px;
+    height: 180px;
+    padding: 0px;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 5px solid white;
+    box-shadow: 5px 3px 1px rgb(235, 235, 235);
     grid-column-start: 2;
     grid-row-start: 2;
 }
 
 .calanques {
-    margin-right: 20px;
-    width: 230px;
-    height: 2fr;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    background-image: url(/photos/calanques.jpg);
+    width: 250px;
+    height: 180px;
+    padding: 0px;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 5px solid white;
+    box-shadow: 5px 3px 1px rgb(235, 235, 235);
     grid-row-start: 1;
     
 }
 
 .notredame {
-    margin-right: 20px;
-    width: 230px;
-    border-top-left-radius: 10px;
+    background-image: url(/photos/notredame.jpg);
+    width: 250px;
+    height: 180px;
+    padding: 0px;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 5px solid white;
+    box-shadow: 5px 3px 1px rgb(235, 235, 235);
     border-top-right-radius: 10px;
    
 }
 
 .longchamp {
-    margin-right: 20px;
-    width: 230px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    grid-column-start: 4;
+    background-image: url(/photos/longchamp.jpg);
+    width: 250px;
+    height: 180px;
+    padding: 0px;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 5px solid white;
+    box-shadow: 5px 3px 1px rgb(235, 235, 235);
     grid-row-start: 2;
 }
 
