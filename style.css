@@ -34,7 +34,7 @@ body {
 .rubriques {
     margin-right: 60px;
     float: right;
-
+    list-style: none;
 }
 
 .main {
@@ -173,7 +173,7 @@ i {
 }
 
 .cannebiere {
-    background-image: url(/photos//lacannebiere.jpg);
+    /*background-image: url(/photos//lacannebiere.jpg);*/
     width: 200px;
     height: 180px;
 
@@ -185,7 +185,15 @@ i {
     justify-content: flex-end;
     border: 5px solid white;
     box-shadow: 5px 3px 1px rgb(235, 235, 235);
- }
+}
+
+.frame {
+    height: 100px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
 
  .desc {
     background-color: white;
@@ -226,6 +234,7 @@ i {
 
  .mouettes {
     background-image: url(/photos/lesmouettes.jpg);
+
     width: 200px;
     height: 180px;
     padding: 0px;
@@ -335,8 +344,8 @@ i {
  }
 
  .lesoleil {
-    background-image: url(/photos/lesoleil.jpg);
-    width: 320px;
+    
+    width: 350px;
     height: 150px;
     margin: 2px;
     padding: 0px;
@@ -349,8 +358,8 @@ i {
  }
 
  .coeur {
-    background-image: url(/photos/aucoeur.jpg);
-    width: 320px;
+    
+    width: 350px;
     height: 150px;
     margin: 2px;
     padding: 0px;
@@ -363,8 +372,8 @@ i {
  }
 
  .bleuetblanc {
-    background-image: url(/photos/bleuetblanc.jpg);
-    width: 320px;
+    
+    width: 350px;
     height: 150px;
     margin: 2px;
     padding: 0px;
@@ -376,18 +385,28 @@ i {
     border: 5px solid white;
  }
 
+ .framepopu {
+    width: 180px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
  /*.apparts img {
      border-top-left-radius: 25px; 
      border-top-right-radius: 25px;*/
  
 
  .activities {
+    height: 390px; 
     margin-left: 25px; 
     margin-top: 30px;
     margin-bottom: 100px;
-    display: grid;
+    /*display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;*/
+    /*grid-template-areas: "a c d e"
+                         "a c d f";*/
+    display: flex;                       
  }
 
  .descactivites {
@@ -399,12 +418,14 @@ i {
     padding-bottom: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    justify-content: space-around;
  }
 
 .levieuxport {
     background-image: url(/photos/vieuxport.jpg);
+    background-position: center;
     width: 250px;
-    height: 180px;
+    height: 390px;
     padding: 0px;
     border-radius: 20px;
     margin-left: 30px;
@@ -414,11 +435,31 @@ i {
     justify-content: flex-end;
     border: 5px solid white;
     box-shadow: 5px 3px 1px rgb(235, 235, 235);
-     grid-row-start: 1;
+    grid-row-start: 1;
+    
  }
+
+ .calanques {
+    background-image: url(/photos/calanques.jpg);
+    background-position: center;
+    width: 250px;
+    height: 400px;
+    padding: 0px;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 5px solid white;
+    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+    grid-row-start: 1;
+    
+}
 
  .pomegues {
     background-image: url(/photos/pomegues.jpg);
+    background-position: center;
     width: 250px;
     height: 180px;
     padding: 0px;
@@ -433,42 +474,9 @@ i {
     border-top-right-radius: 10px;
 }
 
-.frioul {
-    background-image: url(/photos/frioul.jpg);
-    width: 250px;
-    height: 180px;
-    padding: 0px;
-    border-radius: 20px;
-    margin-left: 30px;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    border: 5px solid white;
-    box-shadow: 5px 3px 1px rgb(235, 235, 235);
-    grid-column-start: 2;
-    grid-row-start: 2;
-}
-
-.calanques {
-    background-image: url(/photos/calanques.jpg);
-    width: 250px;
-    height: 180px;
-    padding: 0px;
-    border-radius: 20px;
-    margin-left: 30px;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    border: 5px solid white;
-    box-shadow: 5px 3px 1px rgb(235, 235, 235);
-    grid-row-start: 1;
-    
-}
-
 .notredame {
     background-image: url(/photos/notredame.jpg);
+    background-position: center;
     width: 250px;
     height: 180px;
     padding: 0px;
@@ -484,8 +492,28 @@ i {
    
 }
 
+.frioul {
+    background-image: url(/photos/frioul.jpg);
+    background-position: center;
+    width: 250px;
+    height: 180px;
+    padding: 0px;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 5px solid white;
+    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+
 .longchamp {
     background-image: url(/photos/longchamp.jpg);
+    background-position: center;
     width: 250px;
     height: 180px;
     padding: 0px;
@@ -504,6 +532,12 @@ i {
     
     height: 150px;
 }
+
+.column2 {
+    flex-direction: column;
+
+}
+
  
  footer {
      padding-left: 20px;
