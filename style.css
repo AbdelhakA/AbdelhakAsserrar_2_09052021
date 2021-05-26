@@ -234,7 +234,7 @@ i {
  }
 
  .port {
-    background-image: url(/photos/portmedium.jpg);
+    background-image: url(/photos/hotelduport.jpg);
     background-size: cover;
     background-position-y: -40px;
     width: 230px;
@@ -250,7 +250,7 @@ i {
  }
 
  .mouettes {
-    background-image: url(/photos/mouettesmedium.jpg);
+    background-image: url(/photos/lesmouettes.jpg);
     background-size: contain;
     background-position-y: -20%;
     width: 230px;
@@ -266,7 +266,7 @@ i {
  }
 
  .mer {
-    background-image: url(/photos/mermedium.jpg);
+    background-image: url(/photos/delamer.jpg);
     background-size: contain;
     background-position-y: -40px;
     width: 230px;
@@ -283,7 +283,7 @@ i {
  }
 
  .panier {
-    background-image: url(/photos/paniermedium.jpg);
+    background-image: url(/photos/lepanier.jpg);
     background-size: contain;
     width: 230px;
     height: 180px;
@@ -299,7 +299,7 @@ i {
  }
 
  .amina {
-    background-image: url(/photos/aminamedium.jpg);
+    background-image: url(/photos/amina.jpg);
     background-size: cover;
     background-position-y: -100px;
     width: 230px;
@@ -382,7 +382,7 @@ i {
  }
 
  .coeur {
-    background-image: url(/photos/coeurmedium.jpg);
+    background-image: url(/photos/aucoeur.jpg);
     background-size: contain;
     max-width: 350px;
     height: 150px;
