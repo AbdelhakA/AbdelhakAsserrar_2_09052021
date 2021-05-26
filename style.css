@@ -9,7 +9,7 @@ body {
 }
 
 .logo {
-   width: 100px;
+   max-width: 100px;
 }
 
 .intro {
@@ -29,6 +29,18 @@ body {
     right: 0px;
     display: flex;
     padding-left: 25px;
+}
+
+.rubriques {
+    margin-right: 60px;
+    float: right;
+    list-style: none;
+}
+
+.rubriques {
+    margin-right: 60px;
+    float: right;
+    list-style: none;
 }
 
 .rubriques {
@@ -109,8 +121,10 @@ i {
     margin-left: 60px;
     background-color: white;
     padding-left: 0px;
-    padding-right: 30px;
+    padding-right: 10px;
     margin-bottom: 10px;
+    color: black;
+    
 }
 
 .criteres {
@@ -173,10 +187,10 @@ i {
 }
 
 .cannebiere {
-    background-image: url(/photos//lacannebiere.jpg);
+    background-image: url(/photos/lacannebiere.jpg);
     background-size: cover;
     /*background-position-y: -20%;*/
-    width: 200px;
+    width: 230px;
     height: 180px;
     padding: 0px;
     border-radius: 20px;
@@ -223,7 +237,7 @@ i {
     background-image: url(/photos/portmedium.jpg);
     background-size: cover;
     background-position-y: -40px;
-    width: 200px;
+    width: 230px;
     height: 180px;
     padding: 0px;
     border-radius: 20px;
@@ -239,7 +253,7 @@ i {
     background-image: url(/photos/mouettesmedium.jpg);
     background-size: contain;
     background-position-y: -20%;
-    width: 200px;
+    width: 230px;
     height: 180px;
     padding: 0px;
     border-radius: 20px;
@@ -255,7 +269,7 @@ i {
     background-image: url(/photos/mermedium.jpg);
     background-size: contain;
     background-position-y: -40px;
-    width: 200px;
+    width: 230px;
     height: 180px;
     padding: 0px;
     border-radius: 20px;
@@ -271,7 +285,7 @@ i {
  .panier {
     background-image: url(/photos/paniermedium.jpg);
     background-size: contain;
-    width: 200px;
+    width: 230px;
     height: 180px;
     padding: 0px;
     border-radius: 20px;
@@ -288,7 +302,7 @@ i {
     background-image: url(/photos/aminamedium.jpg);
     background-size: cover;
     background-position-y: -100px;
-    width: 200px;
+    width: 230px;
     height: 180px;
     padding: 0px;
     border-radius: 20px;
@@ -580,6 +594,15 @@ i {
         margin: 0px;
     }
 
+    .filtres {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bullescriteres {
+        width: 30%;
+    }
+
     .content {  
         flex-direction: column-reverse;
         margin-right: 0px;
@@ -615,39 +638,39 @@ i {
     .cannebiere {
         width: 400px;
         height: 150px;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
 
     .port {
         width: 400px;
         height: 150px;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
 
     .mouettes {
         width: 270px;
         height: 150px;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
 
     .mer {
         width: 270px;
         height: 150px;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         margin-top: 0px;
     }
 
     .panier {
         width: 270px;
         height: 150px;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         margin-top: 0px;
     }
 
     .amina {
         width: 270px;
         height: 150px;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         margin-top: 0px;
     }
 
@@ -655,11 +678,17 @@ i {
         display: block;
     }
 
+    .levieuxport {
+        height: 180px;
+    }
+
     footer {
         display: block;
+        bottom: 0px;
     }
 
     .half2 {
-        display: inline-block;
+        display: block;
+        flex-direction: column;
     }
  }
