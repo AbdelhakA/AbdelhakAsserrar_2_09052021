@@ -426,11 +426,7 @@ i {
     margin-left: 25px; 
     margin-top: 30px;
     margin-bottom: 100px;
-    /*display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;*/
-    /*grid-template-areas: "a c d e"
-                         "a c d f";*/
+    
     display: flex;                       
  }
 
@@ -478,8 +474,6 @@ i {
     justify-content: flex-end;
     border: 5px solid white;
     box-shadow: 5px 3px 1px rgb(235, 235, 235);
-    grid-row-start: 1;
-    
 }
 
  .pomegues {
