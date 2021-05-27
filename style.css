@@ -187,7 +187,7 @@ i {
 }
 
 .cannebiere {
-    background-image: url(/photos/lacannebiere.jpg);
+    background-image: url(photos/lacannebiere.jpg);
     background-size: cover;
     /*background-position-y: -20%;*/
     width: 230px;
@@ -234,7 +234,7 @@ i {
  }
 
  .port {
-    background-image: url(/photos/hotelduport.jpg);
+    background-image: url(photos/hotelduport.jpg);
     background-size: cover;
     background-position-y: -40px;
     width: 230px;
@@ -250,7 +250,7 @@ i {
  }
 
  .mouettes {
-    background-image: url(/photos/lesmouettes.jpg);
+    background-image: url(photos/lesmouettes.jpg);
     background-size: contain;
     background-position-y: -20%;
     width: 230px;
@@ -266,7 +266,7 @@ i {
  }
 
  .mer {
-    background-image: url(/photos/delamer.jpg);
+    background-image: url(photos/delamer.jpg);
     background-size: contain;
     background-position-y: -40px;
     width: 230px;
@@ -283,7 +283,7 @@ i {
  }
 
  .panier {
-    background-image: url(/photos/lepanier.jpg);
+    background-image: url(photos/lepanier.jpg);
     background-size: contain;
     width: 230px;
     height: 180px;
@@ -299,7 +299,7 @@ i {
  }
 
  .amina {
-    background-image: url(/photos/amina.jpg);
+    background-image: url(photos/amina.jpg);
     background-size: cover;
     background-position-y: -100px;
     width: 230px;
@@ -366,7 +366,7 @@ i {
  }
 
  .lesoleil {
-    background-image: url(/photos/lesoleil.jpg);
+    background-image: url(photos/lesoleil.jpg);
     background-size: contain;
     background-position-x: 400px;
     max-width: 350px;
@@ -382,7 +382,7 @@ i {
  }
 
  .coeur {
-    background-image: url(/photos/aucoeur.jpg);
+    background-image: url(photos/aucoeur.jpg);
     background-size: contain;
     max-width: 350px;
     height: 150px;
@@ -397,7 +397,7 @@ i {
  }
 
  .bleuetblanc {
-    background-image: url(/photos/bleuetblanc.jpg);
+    background-image: url(photos/bleuetblanc.jpg);
     max-width: 350px;
     height: 150px;
     margin: 2px;
@@ -443,7 +443,7 @@ i {
  }
 
 .levieuxport {
-    background-image: url(/photos/vieuxport.jpg);
+    background-image: url(photos/vieuxport.jpg);
     background-position: center;
     width: 250px;
     height: 400px;
@@ -461,7 +461,7 @@ i {
  }
 
  .calanques {
-    background-image: url(/photos/calanques.jpg);
+    background-image: url(photos/calanques.jpg);
     background-position: center;
     width: 250px;
     height: 400px;
@@ -477,7 +477,7 @@ i {
 }
 
  .pomegues {
-    background-image: url(/photos/pomegues.jpg);
+    background-image: url(photos/pomegues.jpg);
     background-position: center;
     width: 250px;
     height: 180px;
@@ -494,7 +494,7 @@ i {
 }
 
 .notredame {
-    background-image: url(/photos/notredame.jpg);
+    background-image: url(photos/notredame.jpg);
     background-position: center;
     width: 250px;
     height: 180px;
@@ -512,7 +512,7 @@ i {
 }
 
 .frioul {
-    background-image: url(/photos/frioul.jpg);
+    background-image: url(photos/frioul.jpg);
     background-position: center;
     width: 250px;
     height: 180px;
@@ -531,7 +531,7 @@ i {
 
 
 .longchamp {
-    background-image: url(/photos/longchamp.jpg);
+    background-image: url(photos/longchamp.jpg);
     background-position: center;
     width: 250px;
     height: 180px;
