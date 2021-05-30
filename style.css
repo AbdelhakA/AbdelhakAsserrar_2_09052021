@@ -124,7 +124,7 @@ i {
     padding-right: 10px;
     margin-bottom: 10px;
     color: black;
-    
+    text-decoration: none;
 }
 
 .criteres {
@@ -422,7 +422,7 @@ i {
  
 
  .activities {
-    height: 390px; 
+     
     margin-left: 25px; 
     margin-top: 30px;
     margin-bottom: 100px;
@@ -594,7 +594,7 @@ i {
     }
 
     .bullescriteres {
-        width: 30%;
+        width: fit-content;
     }
 
     .content {  
