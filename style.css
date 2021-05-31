@@ -76,6 +76,7 @@ i {
     width: 40px;
 }
 
+
 .rechecher {
     height: 26px;
     width: 80px;
@@ -93,8 +94,12 @@ i {
     color: white; 
     border-bottom-right-radius: 15px; 
     border-top-right-radius: 15px; 
+    border-color: #0065FC;
 }
-   
+ 
+.fa-search {
+    display: none; 
+}
 
 .content {
     display: flex;
@@ -125,6 +130,11 @@ i {
     margin-bottom: 10px;
     color: black;
     text-decoration: none;
+}
+
+.line1 {
+    display: flex;
+    flex-direction: row;
 }
 
 .criteres {
@@ -588,13 +598,48 @@ i {
         margin: 0px;
     }
 
+    .menu {
+        right: 0px;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap-reverse;
+        padding-left: 25px;
+    }   
+    
+    .lookfor {
+        color: white; 
+        margin: auto;
+    }
+
+    button {
+        border-color: #0065FC; 
+      
+    }
+
+    .buttonname {
+        display: none;
+    }
+
+    .fa-search {
+        size: 30px;
+        margin: auto;
+        padding: unset;
+        display: flex;
+    }
+
     .filtres {
         display: flex;
         flex-direction: column;
     }
 
+    .line1 {
+        display: flex;
+        flex-direction: row;
+    }
+
     .bullescriteres {
         width: fit-content;
+        margin-left: 0px;
     }
 
     .content {  
