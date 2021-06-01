@@ -97,8 +97,8 @@ i {
     border-color: #0065FC;
 }
  
-.fa-search {
-    display: none; 
+.loupe {
+   display: none; 
 }
 
 .content {
@@ -598,6 +598,11 @@ i {
         margin: 0px;
     }
 
+    .descintro {
+        width: 100%;
+        font-size: 25px;
+    }
+
     .menu {
         right: 0px;
         display: flex;
@@ -605,6 +610,15 @@ i {
         flex-wrap: wrap-reverse;
         padding-left: 25px;
     }   
+
+    .liresponsive {
+        display: flex;
+        float: inline-start;
+        margin-top: 40px;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
     
     .lookfor {
         color: white; 
@@ -613,16 +627,17 @@ i {
 
     button {
         border-color: #0065FC; 
-      
+        padding: 0%;
     }
 
     .buttonname {
         display: none;
     }
 
-    .fa-search {
+    .loupe {
         size: 30px;
-        margin: auto;
+        padding: 10px;
+        
         padding: unset;
         display: flex;
     }
@@ -647,27 +662,47 @@ i {
         margin-right: 0px;
     }
 
+    .rated {
+        margin-bottom: 15px;
+    }
+
     .lesoleil {
-        width: 400px;
-        margin-left: 36px;
+        width: 100%;
+        margin-top: 0px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 15px;
     }
 
     .coeur {
-        width: 600px;
+        width: 100%;
         margin-left: 36px;
+        margin: 15px;
+    }
+
+    .bleuetblanc {
+        width: 100%;
+        margin-left: 36px;
+        margin: 15px;
     }
 
     .populaires {
         width: 100%;
         border-radius: 0px;
+        
     }
 
 
 
     .accomodations {
+        width: 100%;
         margin: 0px;
         background-color: white;
         justify-content: space-around;
+    }
+
+    .notes {
+        margin-bottom: 0px;
     }
 
     .desc {
@@ -675,49 +710,54 @@ i {
     }
 
     .cannebiere {
-        width: 400px;
-        height: 150px;
-        margin-bottom: 20px;
+        width: 100%;
+        height: 180px;
+        margin: 20px;
     }
 
     .port {
-        width: 400px;
-        height: 150px;
-        margin-bottom: 20px;
+        width: 100%;
+        height: 180px;
+        margin: 20px;
     }
 
     .mouettes {
-        width: 270px;
-        height: 150px;
-        margin-bottom: 20px;
+        width: 100%;
+        height: 180px;
+        margin: 20px;
     }
 
     .mer {
-        width: 270px;
-        height: 150px;
-        margin-bottom: 20px;
-        margin-top: 0px;
+        width: 100%;
+        height: 180px;
+        margin: 20px;
+        
     }
 
     .panier {
-        width: 270px;
-        height: 150px;
-        margin-bottom: 20px;
-        margin-top: 0px;
+        width: 100%;
+        height: 180px;
+        margin: 20px;
+        
     }
 
     .amina {
-        width: 270px;
-        height: 150px;
-        margin-bottom: 20px;
-        margin-top: 0px;
+        width: 100%;
+        height: 180px;
+        margin: 20px;
+        
     }
 
     .activities {
+        width: 100%;
         display: block;
     }
 
     .levieuxport {
+        height: 180px;
+    }
+
+    .calanques {
         height: 180px;
     }
 
