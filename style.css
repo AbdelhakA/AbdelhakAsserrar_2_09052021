@@ -55,6 +55,9 @@ body {
 
 input {
     height: 40px;
+    padding-right: 40px;
+    border-style: solid;
+    border-color: #F2F2F2;
 }
 
 #where {
@@ -97,9 +100,9 @@ i {
     border-color: #0065FC;
 }
  
-.loupe {
-   display: none; 
-}
+/* div.lookfor {
+    display: none!important; 
+ } */
 
 .content {
     display: flex;
@@ -430,11 +433,16 @@ i {
      border-top-left-radius: 25px; 
      border-top-right-radius: 25px;*/
  
+ .intitule {
+     margin-bottom: 0px;
+     margin-top: 80px;
+     margin-left: 30px; 
+ }    
 
  .activities {
      
-    margin-left: 25px; 
-    margin-top: 30px;
+    margin-left: 30px; 
+    margin-top: 0px;
     margin-bottom: 100px;
     
     display: flex;                       
@@ -455,11 +463,10 @@ i {
 .levieuxport {
     background-image: url(photos/vieuxport.jpg);
     background-position: center;
-    width: 250px;
+    width: 305px;
     height: 400px;
     padding: 0px;
     border-radius: 20px;
-    margin-left: 30px;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -473,7 +480,7 @@ i {
  .calanques {
     background-image: url(photos/calanques.jpg);
     background-position: center;
-    width: 250px;
+    width: 305px;
     height: 400px;
     padding: 0px;
     border-radius: 20px;
@@ -489,8 +496,8 @@ i {
  .pomegues {
     background-image: url(photos/pomegues.jpg);
     background-position: center;
-    width: 250px;
-    height: 180px;
+    width: 305px;
+    height: 200px;
     padding: 0px;
     border-radius: 20px;
     margin-left: 30px;
@@ -505,9 +512,9 @@ i {
 
 .notredame {
     background-image: url(photos/notredame.jpg);
-    background-position: center;
-    width: 250px;
-    height: 180px;
+    background-position: center 10%;
+    width: 305px;
+    height: 160px;
     padding: 0px;
     border-radius: 20px;
     margin-left: 30px;
@@ -524,8 +531,8 @@ i {
 .frioul {
     background-image: url(photos/frioul.jpg);
     background-position: center;
-    width: 250px;
-    height: 180px;
+    width: 305px;
+    height: 160px;
     padding: 0px;
     border-radius: 20px;
     margin-left: 30px;
@@ -543,8 +550,8 @@ i {
 .longchamp {
     background-image: url(photos/longchamp.jpg);
     background-position: center;
-    width: 250px;
-    height: 180px;
+    width: 305px;
+    height: 200px;
     padding: 0px;
     border-radius: 20px;
     margin-left: 30px;
@@ -556,6 +563,10 @@ i {
     box-shadow: 5px 3px 1px rgb(235, 235, 235);
     grid-row-start: 2;
 }
+
+
+
+
 
 .listactivites {
     
@@ -596,6 +607,7 @@ i {
      
     body {
         margin: 0px;
+        padding: 0px;
     }
 
     .descintro {
@@ -623,6 +635,11 @@ i {
     .lookfor {
         color: white; 
         margin: auto;
+
+    }
+
+    #filter { 
+        margin-bottom: 30px;
     }
 
     button {
@@ -630,16 +647,14 @@ i {
         padding: 0%;
     }
 
-    .buttonname {
+    /* .buttonname {
         display: none;
-    }
+    } */
 
     .loupe {
         size: 30px;
-        padding: 10px;
-        
-        padding: unset;
-        display: flex;
+        align-items: center;
+        width: fit-content;
     }
 
     .filtres {
@@ -692,7 +707,16 @@ i {
         
     }
 
+    input {
+        padding-right: 40px;
+        border-style: solid;
+        border-color: #F2F2F2;
+        height: 45px;
+    }
 
+    div.localisation {
+        height: 45px
+    }
 
     .accomodations {
         width: 100%;
@@ -770,4 +794,26 @@ i {
         display: block;
         flex-direction: column;
     }
+ }
+
+ @media screen and (max-width: 700px) {
+     .buttonname {display: none;}
+
+     button.rechercher {
+        width: 50px;
+    }
+
+    i.loupe {
+        margin: 0px;
+    }
+ }
+
+ @media screen and (min-width: 701px) {
+     div.lookfor {
+         display: none!important;
+        margin: auto;
+    }
+    
+    
+
  }
