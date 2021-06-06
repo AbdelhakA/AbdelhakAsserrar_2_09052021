@@ -1,8 +1,535 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+/*body {
+    margin: 0px;
+    padding-top: 25px;
+    font-family: 'Raleway', sans-serif;
+}*/
 
 body {
+    margin: 0px;
+    padding: 0px;
+    padding-top: 25px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.descintro {
+    width: 100%;
+    font-size: 25px;
+}
+
+.menu {
+    right: 0px;
+    display: flex;
+    
+    flex-wrap: wrap-reverse;
+    padding-left: 25px;
+    margin-top: 0px; 
+}  
+
+#topcorner {
+    right: 0px;
+}
+
+.liresponsive {
+    display: flex;
+    float: inline-start;
+    margin-top: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lookfor {
+    color: white; 
+    margin: auto;
+
+}
+
+#filter { 
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+
+button {
+    border-color: #0065FC; 
+    padding: 0%;
+}
+
+.loupe {
+    size: 30px;
+    align-items: center;
+    width: fit-content;
+}
+
+.filtres {
+    display: flex;
+    flex-direction: column;
+}
+
+.line1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.bullescriteres {
+    width: fit-content;
+    margin-left: 0px;
+    display: flex;
+    height: 40px;
+    border-radius: 40px;
+    border-style: solid;
+    border-width: 0.5px;
+    margin-right: 10px;
+    margin-left: 15px;
+    background-color: white;
+    padding-left: 0px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.content {  
+    flex-direction: column-reverse;
+    margin-right: 0px;
+}
+
+.rated {
+    margin-bottom: 15px;
+}
+
+.lesoleil {
+    background-image: url(photos/lesoleil.jpg);
+    background-size: contain;
+    border-radius: 20px;
+    background-position-x: 400px;
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border: 5px solid white;
+}
+
+.coeur {
+    background-image: url(photos/aucoeur.jpg);
+    background-size: contain;
+    border-radius: 20px;
+    width: 100%;
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border: 5px solid white;
+}
+
+.bleuetblanc {
+    background-image: url(photos/bleuetblanc.jpg);
+    width: 100%;
+    margin: 15px;
+    border-radius: 20px;
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border: 5px solid white;
+}
+
+.populaires {
+    width: 100%;
+    border-radius: 0px;
+    
+}
+
+.entete {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    height: 40px;
+    padding-right: 40px;
+    border-style: solid;
+    border-color: #F2F2F2;
+}
+
+div.localisation {
+    height: 45px
+}
+
+.accomodations {
+    width: 97%;
+    margin: 0px;
+    background-color: white;
+    justify-content: space-around;
+    padding-right: 30px;
+}
+
+.notes {
+    margin-bottom: 0px;
+}
+
+.desc {
+    padding-bottom: 2px;
+    background-color: white;
+    font-size: small;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.cannebiere {
+    width: 95%;
+    height: 180px;
+    margin: 20px;
+    background-image: url(photos/lacannebiere.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 5px solid white;
+    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+}
+
+.port {
+    width: 95%;
+    height: 180px;
+    margin: 20px;
+    background-image: url(photos/hotelduport.jpg);
+    background-size: cover;
+    background-position-y: -40px;
+    border-radius: 20px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 5px solid white;
+    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+}
+
+.mouettes {
+    width: 95%;
+    height: 180px;
+    margin: 20px;
+    background-image: url(photos/lesmouettes.jpg);
+    background-size: contain;
+    background-position-y: -20%;
+    border-radius: 20px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 5px solid white;
+    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+}
+
+.mer {
+    width: 95%;
+    height: 180px;
+    margin: 20px;
+    background-image: url(photos/delamer.jpg);
+    background-size: contain;
+    background-position-y: -40px;
+    border-radius: 20px;
+    margin-left: 15px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 5px solid white;
+    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+}
+
+
+
+.panier {
+    width: 95%;
+    height: 180px;
+    margin: 20px;
+    background-image: url(photos/lepanier.jpg);
+    background-size: contain;
+    padding: 0px;
+    border-radius: 20px;
+    margin-left: 15px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 5px solid white;
+    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+}
+
+.amina {
+    width: 95%;
+    height: 180px;
+    margin: 20px;
+    background-image: url(photos/amina.jpg);
+    background-size: cover;
+    background-position-y: -100px;
+    border-radius: 20px;
+    margin-left: 15px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 5px solid white;
+    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+}
+
+.activities {
+    width: 100%;
+    display: block;
+}
+
+.levieuxport {
+    background-image: url(photos/vieuxport.jpg);
+    background-position: center;
+    height: 180px;
+    border-radius: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 5px solid white;
+    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+}
+
+.calanques {
+    background-image: url(photos/calanques.jpg);
+    background-position: center;
+    height: 180px;
+    border-radius: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 5px solid white;
+    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+}
+
+.pomegues {
+    background-image: url(photos/pomegues.jpg);
+    background-position: contain;
+    background-repeat: no-repeat;
+    height: 180px;
+    border-radius: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 5px solid white;
+    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+}
+
+.frioul {
+    background-image: url(photos/frioul.jpg);
+    background-position: center;
+    height: 180px;
+    border-radius: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 5px solid white;
+    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+}
+
+.notredame {
+    background-image: url(photos/notredame.jpg);
+    background-position: center;
+    height: 180px;
+    border-radius: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 5px solid white;
+    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+}
+
+.longchamp {
+    background-image: url(photos/longchamp.jpg);
+    background-position: center;
+    height: 180px;
+    border-radius: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 5px solid white;
+    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+}
+
+footer {
+    display: block;
+    bottom: 0px;
+}
+
+.half2 {
+    display: block;
+    flex-direction: column;
+}
+
+.logo {
+    max-width: 100px;
+ }
+
+ .reservia {
+     width: fit-content;
+
+ }
+
+ .intro {
+    padding-left: 25px;
+}
+
+li#topcorner.rubriques {
+    margin-bottom: 50px;
+    margin-top: 0px;
+    top: 0px
+}
+
+.rubriques {
+    margin-right: 60px;
+    float: right;
+    list-style: none;
+}
+
+.research {
+    display: flex;
+   
+}
+
+
+#where {
+    color: black;
+}
+
+.localisation {
+    height: 40px;
+    width: 50px;
+    background-color: #F2F2F2;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    
+}
+
+i {
+    margin-top: 12px;
+    margin-left: 20px;
+    width: 40px;
+}
+
+.liresponsive {
+    display: flex;
+    float: inline-start;
+    margin-top: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+.rechercher {
+    background-color: #0065FC; 
+    color: white; 
+    border-bottom-right-radius: 15px; 
+    border-top-right-radius: 15px; 
+    border-color: #0065FC;
+}
+
+ .buttonname {
+    display: none;
+} 
+
+.loupe {
+    size: 30px;
+    align-items: center;
+    width: fit-content;
+}
+
+.filtres {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.icone {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #DEEBFF ;
+    margin-left: 0px;
+    size: 20px;
+    color:#0065FC;
+    margin-top: 0px;
+    
+}
+
+#bill {
+    margin-left: 25%;
+}
+
+#child {
+    margin-left: 35%;
+}
+
+#heart {
+    margin-left: 30%;
+}
+
+#dog {
+    margin-left: 30%;
+}
+
+#filter {
+    margin-top: 10px;
+}
+
+
+.rated {
+    margin-bottom: 15px;
+}
+
+.descpopu {
+    background-color: white;
+    font-size: small;
+    padding-left: 4px;
+    padding-right: 50px;
+    padding-top: 5px;
+ }
+
+input {
+    padding-right: 40px;
+    border-style: solid;
+    border-color: #F2F2F2;
+    height: 45px;
+}
+
+.descactivites {
+    background-color: white;
+    font-size: small;
+    padding-left: 20px;
+    padding-right: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    justify-content: space-around;
+ }
+
+ @media screen and (min-width: 701px) {
+    
+    div.lookfor {
+        display: none!important;
+       margin: auto;   
+   }
+   body {
     margin: 0px;
     padding-top: 25px;
     font-family: 'Raleway', sans-serif;
@@ -29,6 +556,7 @@ body {
     right: 0px;
     display: flex;
     padding-left: 25px;
+    flex-direction: row;
 }
 
 .rubriques {
@@ -37,17 +565,11 @@ body {
     list-style: none;
 }
 
-.rubriques {
-    margin-right: 60px;
-    float: right;
-    list-style: none;
+
+.buttonname {
+    display: flex;
 }
 
-.rubriques {
-    margin-right: 60px;
-    float: right;
-    list-style: none;
-}
 
 .main {
     justify-content: space-between;
@@ -80,17 +602,7 @@ i {
 }
 
 
-.rechecher {
-    height: 26px;
-    width: 80px;
-    background-color: #0065FC;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
-    font-size: 12px;
-    color: white;
-    padding-left: 10px;
-    padding-top: 14px;
-}
+
 
 .rechercher {
     background-color: #0065FC; 
@@ -98,14 +610,12 @@ i {
     border-bottom-right-radius: 15px; 
     border-top-right-radius: 15px; 
     border-color: #0065FC;
+    width: fit-content;
 }
- 
-/* div.lookfor {
-    display: none!important; 
- } */
 
 .content {
     display: flex;
+    flex-direction: row;
 }
 
 .research {
@@ -115,6 +625,7 @@ i {
  
 .filtres {
     display: flex;
+    flex-direction: row;
     margin-top: 30px;
     padding-left: 25px;
 }
@@ -366,9 +877,6 @@ i {
     height: 40px; 
  }
 
-.best {
-    
-}
 
  .descpopu {
     background-color: white;
@@ -603,217 +1111,6 @@ i {
     margin-left: 20%;
  }
 
- @media screen and (max-width:700px) {
-     
-    body {
-        margin: 0px;
-        padding: 0px;
-    }
-
-    .descintro {
-        width: 100%;
-        font-size: 25px;
-    }
-
-    .menu {
-        right: 0px;
-        display: flex;
-        flex-direction: row-reverse;
-        flex-wrap: wrap-reverse;
-        padding-left: 25px;
-    }   
-
-    .liresponsive {
-        display: flex;
-        float: inline-start;
-        margin-top: 40px;
-        flex-direction: row;
-        justify-content: space-between;
-
-    }
-    
-    .lookfor {
-        color: white; 
-        margin: auto;
-
-    }
-
-    #filter { 
-        margin-bottom: 30px;
-    }
-
-    button {
-        border-color: #0065FC; 
-        padding: 0%;
-    }
-
-    /* .buttonname {
-        display: none;
-    } */
-
-    .loupe {
-        size: 30px;
-        align-items: center;
-        width: fit-content;
-    }
-
-    .filtres {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .line1 {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .bullescriteres {
-        width: fit-content;
-        margin-left: 0px;
-    }
-
-    .content {  
-        flex-direction: column-reverse;
-        margin-right: 0px;
-    }
-
-    .rated {
-        margin-bottom: 15px;
-    }
-
-    .lesoleil {
-        width: 100%;
-        margin-top: 0px;
-        margin-left: 15px;
-        margin-right: 15px;
-        margin-bottom: 15px;
-    }
-
-    .coeur {
-        width: 100%;
-        margin-left: 36px;
-        margin: 15px;
-    }
-
-    .bleuetblanc {
-        width: 100%;
-        margin-left: 36px;
-        margin: 15px;
-    }
-
-    .populaires {
-        width: 100%;
-        border-radius: 0px;
-        
-    }
-
-    input {
-        padding-right: 40px;
-        border-style: solid;
-        border-color: #F2F2F2;
-        height: 45px;
-    }
-
-    div.localisation {
-        height: 45px
-    }
-
-    .accomodations {
-        width: 100%;
-        margin: 0px;
-        background-color: white;
-        justify-content: space-around;
-    }
-
-    .notes {
-        margin-bottom: 0px;
-    }
-
-    .desc {
-        padding-bottom: 2px;
-    }
-
-    .cannebiere {
-        width: 100%;
-        height: 180px;
-        margin: 20px;
-    }
-
-    .port {
-        width: 100%;
-        height: 180px;
-        margin: 20px;
-    }
-
-    .mouettes {
-        width: 100%;
-        height: 180px;
-        margin: 20px;
-    }
-
-    .mer {
-        width: 100%;
-        height: 180px;
-        margin: 20px;
-        
-    }
-
-    .panier {
-        width: 100%;
-        height: 180px;
-        margin: 20px;
-        
-    }
-
-    .amina {
-        width: 100%;
-        height: 180px;
-        margin: 20px;
-        
-    }
-
-    .activities {
-        width: 100%;
-        display: block;
-    }
-
-    .levieuxport {
-        height: 180px;
-    }
-
-    .calanques {
-        height: 180px;
-    }
-
-    footer {
-        display: block;
-        bottom: 0px;
-    }
-
-    .half2 {
-        display: block;
-        flex-direction: column;
-    }
  }
 
- @media screen and (max-width: 700px) {
-     .buttonname {display: none;}
-
-     button.rechercher {
-        width: 50px;
-    }
-
-    i.loupe {
-        margin: 0px;
-    }
- }
-
- @media screen and (min-width: 701px) {
-     div.lookfor {
-         display: none!important;
-        margin: auto;
-    }
-    
-    
-
- }
+ 
