@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-/*body {
-    margin: 0px;
-    padding-top: 25px;
-    font-family: 'Raleway', sans-serif;
-}*/
-
 body {
     margin: 0px;
     padding: 0px;
     padding-top: 25px;
     font-family: 'Raleway', sans-serif;
 }
+
+nav {
+    margin-left: 15px;
+}
+
+main {
+    margin-left: 15px;
+}
+
+
 
 .descintro {
     width: 100%;
@@ -25,10 +29,14 @@ body {
     flex-wrap: wrap-reverse;
     padding-left: 25px;
     margin-top: 0px; 
-}  
+} 
 
-#topcorner {
-    right: 0px;
+li {
+    color: black;
+}
+
+li:hover {
+    color: #0065FC;
 }
 
 .liresponsive {
@@ -46,19 +54,31 @@ body {
 }
 
 #filter { 
-    margin-bottom: 30px;
+    padding-top: 20px;
+    
     margin-left: 15px;
 }
 
 button {
-    border-color: #0065FC; 
+    border: #0065FC 2px solid; 
     padding: 0%;
+    border-radius: 10px;
+    width: 50px;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+.bullescriteres:hover {
+    background-color: #DEEBFF;
+    color: #0065FC;  
 }
 
 .loupe {
     size: 30px;
-    align-items: center;
-    width: fit-content;
+    margin: auto;
 }
 
 .filtres {
@@ -66,9 +86,34 @@ button {
     flex-direction: column;
 }
 
+
+
 .line1 {
     display: flex;
     flex-direction: row;
+}
+
+.research {
+    border: 2px solid #F2F2F2;
+    width: fit-content;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-left: 15px;
+}
+
+input {
+    height: 40px;
+    padding-right: 40px;
+    
+    border-style: none!important;
+}
+
+.criteres {
+    margin: auto;
+    padding-left: 6px;
+    font-weight: bolder;
 }
 
 .bullescriteres {
@@ -105,7 +150,7 @@ button {
     background-position-x: 400px;
     width: 100%;
     margin-top: 0px;
-    margin-left: 15px;
+    margin-left: 0px;
     margin-right: 15px;
     margin-bottom: 15px;
     display: flex;
@@ -119,7 +164,7 @@ button {
     background-size: contain;
     border-radius: 20px;
     width: 100%;
-    margin: 15px;
+    margin: 0px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -131,7 +176,7 @@ button {
     width: 100%;
     margin: 15px;
     border-radius: 20px;
-    margin: 15px;
+    margin: 0px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -141,7 +186,7 @@ button {
 .populaires {
     width: 100%;
     border-radius: 0px;
-    
+    margin-left: 0px;
 }
 
 .entete {
@@ -149,12 +194,6 @@ button {
     justify-content: space-between;
 }
 
-input {
-    height: 40px;
-    padding-right: 40px;
-    border-style: solid;
-    border-color: #F2F2F2;
-}
 
 div.localisation {
     height: 45px
@@ -166,6 +205,10 @@ div.localisation {
     background-color: white;
     justify-content: space-around;
     padding-right: 30px;
+}
+
+.choice {
+    margin-left: 0px;
 }
 
 .notes {
@@ -187,7 +230,7 @@ div.localisation {
     background-image: url(photos/lacannebiere.jpg);
     background-size: cover;
     border-radius: 20px;
-    margin-left: 15px;
+    margin-left: 0px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -203,7 +246,7 @@ div.localisation {
     background-size: cover;
     background-position-y: -40px;
     border-radius: 20px;
-    margin-left: 15px;
+    margin-left: 0px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -219,7 +262,7 @@ div.localisation {
     background-size: contain;
     background-position-y: -20%;
     border-radius: 20px;
-    margin-left: 15px;
+    margin-left: 0px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -235,7 +278,7 @@ div.localisation {
     background-size: contain;
     background-position-y: -40px;
     border-radius: 20px;
-    margin-left: 15px;
+    margin-left: 20px;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -254,7 +297,7 @@ div.localisation {
     background-size: contain;
     padding: 0px;
     border-radius: 20px;
-    margin-left: 15px;
+    margin-left: 20px;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -271,7 +314,7 @@ div.localisation {
     background-size: cover;
     background-position-y: -100px;
     border-radius: 20px;
-    margin-left: 15px;
+    margin-left: 20px;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -440,6 +483,7 @@ i {
     border-bottom-right-radius: 15px; 
     border-top-right-radius: 15px; 
     border-color: #0065FC;
+    
 }
 
  .buttonname {
@@ -509,6 +553,7 @@ input {
     border-style: solid;
     border-color: #F2F2F2;
     height: 45px;
+    border-left: white;
 }
 
 .descactivites {
@@ -525,11 +570,12 @@ input {
 
  @media screen and (min-width: 701px) {
     
-    div.lookfor {
+div.lookfor {
         display: none!important;
        margin: auto;   
-   }
-   body {
+}
+   
+body {
     margin: 0px;
     padding-top: 25px;
     font-family: 'Raleway', sans-serif;
@@ -541,6 +587,10 @@ input {
 
 .intro {
     padding-left: 25px;
+}
+
+li:hover {
+    color: #0065FC;
 }
 
 .research {
@@ -557,6 +607,10 @@ input {
     display: flex;
     padding-left: 25px;
     flex-direction: row;
+}
+
+.liresponsive {
+    margin-top: 0px;
 }
 
 .rubriques {
@@ -608,9 +662,11 @@ i {
     background-color: #0065FC; 
     color: white; 
     border-bottom-right-radius: 15px; 
-    border-top-right-radius: 15px; 
+    border-top-right-radius: 15px;
     border-color: #0065FC;
     width: fit-content;
+    border-bottom-left-radius: 0px; 
+    border-top-left-radius: 0px;
 }
 
 .content {
@@ -633,6 +689,7 @@ i {
 .bullescriteres {
     display: flex;
     height: 40px;
+    border-color: #DEEBFF;
     border-radius: 40px;
     border-style: solid;
     border-width: 0.5px;
@@ -646,14 +703,19 @@ i {
     text-decoration: none;
 }
 
+.bullescriteres:hover {
+    background-color: #DEEBFF;
+    color: #0065FC;  
+}
+
 .line1 {
     display: flex;
     flex-direction: row;
 }
 
 .criteres {
-    margin-top: 10px;
-    margin-left: 10px;
+    margin: auto;
+
 }
 
 .icone {
@@ -685,7 +747,7 @@ i {
 }
 
 #filter {
-    margin-top: 10px;
+    padding-top: 0px;
 }
 
 .accomodations {
@@ -696,7 +758,7 @@ i {
     padding-top: 30px;
     background-color: #F2F2F2;
     border-radius: 20px;
-    width: 57%;
+    width: 70%;
     margin-left: 30px;
 }
 
@@ -718,7 +780,7 @@ i {
     height: 180px;
     padding: 0px;
     border-radius: 20px;
-    margin-left: 30px;
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -765,7 +827,7 @@ i {
     height: 180px;
     padding: 0px;
     border-radius: 20px;
-    margin-left: 30px;
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -781,7 +843,7 @@ i {
     height: 180px;
     padding: 0px;
     border-radius: 20px;
-    margin-left: 30px;
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -797,8 +859,8 @@ i {
     height: 180px;
     padding: 0px;
     border-radius: 20px;
-    margin-left: 30px;
-    margin-top: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -813,8 +875,8 @@ i {
     height: 180px;
     padding: 0px;
     border-radius: 20px;
-    margin-left: 30px;
-    margin-top: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -830,8 +892,8 @@ i {
     height: 180px;
     padding: 0px;
     border-radius: 20px;
-    margin-left: 30px;
-    margin-top: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
