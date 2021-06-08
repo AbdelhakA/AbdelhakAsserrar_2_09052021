@@ -37,6 +37,7 @@ li {
 
 li:hover {
     color: #0065FC;
+    text-decoration: overline blue 2px ;
 }
 
 .liresponsive {
@@ -132,6 +133,22 @@ input {
     margin-bottom: 10px;
     color: black;
     text-decoration: none;
+}
+
+.info {
+   
+}
+
+.fa-info {
+    color: #0065FC;
+    border: 1px #F2F2F2 solid;
+    border-radius: 300px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 5px;
+    padding-top: 10px;
+    width: 15px;
+    margin-right: 10px;
 }
 
 .content {  
@@ -278,7 +295,7 @@ div.localisation {
     background-size: contain;
     background-position-y: -40px;
     border-radius: 20px;
-    margin-left: 20px;
+    margin-left: 0px;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -297,7 +314,7 @@ div.localisation {
     background-size: contain;
     padding: 0px;
     border-radius: 20px;
-    margin-left: 20px;
+    margin-left: 0px;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -314,7 +331,7 @@ div.localisation {
     background-size: cover;
     background-position-y: -100px;
     border-radius: 20px;
-    margin-left: 20px;
+    margin-left: 0px;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
