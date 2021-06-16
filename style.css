@@ -33,9 +33,6 @@ nav {
     margin-right: 0px
 }
 
-.liresponsive .rubriques {
-    
-}
 
 .content {  
     display: flex;
@@ -150,6 +147,14 @@ a {
     border-top-left-radius: 20px;
     margin-left: 15px;
     padding-left: 0px;
+}
+
+::placeholder {
+    font-size: 1.1em;
+    margin-left: 5px;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font: bolder;
 }
 
 input {
@@ -267,9 +272,13 @@ input {
     justify-content: space-between;
 }
 
+.descpopu .note {
+    color: #0065FC;
+}
+
 
 div.localisation {
-    height: 45px
+    height: 45px;
 }
 
 .accomodations {
@@ -755,6 +764,14 @@ li:hover {
 
 .research {
     padding-left: 25px;
+}
+
+::placeholder {
+    font-size: 1.1em;
+    margin-left: 5px;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font: bolder;
 }
 
 .principal {
