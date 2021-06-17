@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-@media screen and (max-width:700px) {
-    
-}
 
 html {
     overflow-x: hidden;
@@ -273,7 +270,7 @@ input {
 }
 
 .descpopu .note {
-    color: #0065FC;
+    
 }
 
 
@@ -734,10 +731,388 @@ footer h4 {
     padding-top: 20px;
 }
 
+/*  TABLET VERSION    */
 
-/* DESKTOP VERSION */
+@media (min-width: 768px) and (max-width: 991.98px)  {
+    html {
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
+    
+    body {
+        max-width: 100vw;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        padding-top: 25px;
+        font-family: 'Raleway', sans-serif;
+        overflow-x: hidden;
+    }
+    
+    li#topcorner.rubriques {
+        padding-top: 0px;
+        margin-left: 0px;
+    
+    }
+    
+    .logo {
+        position: relative;
+        max-width: 100px;
+    }
+    
+    
+    .content {  
+        display: flex;
+        flex-direction: column-reverse;
+        margin-right: 0px;
+    } 
+    
+    .descintro {
+        width: 100%;
+        font-size: 25px;
+    }
+    
+    .menu {
+        right: 0px;
+        display: inline-flex;
+        padding-left: 25px;
+        flex-direction: row;
+        float: right;
+        margin-top: 25px;
+    }
 
- @media screen and (min-width: 700px) {
+    .principal {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
+    .rubriques {
+        margin-right: 60px!important;
+        float: right;
+        list-style: none;
+        margin-top: 0px!important;
+        
+    }
+
+    div.liresponsive {
+        margin-top: 0px!important;
+    }
+    
+    
+    a {
+        color: black;
+    }
+    
+    .lookfor {
+        color: white; 
+        margin: auto;
+    
+    }
+    
+    #filter { 
+        padding-top: 20px;
+        
+        margin-left: 15px;
+    }
+    
+    button {
+        border: #0065FC 2px solid; 
+        padding: 0%;
+        border-radius: 10px;
+        width: 50px;
+        
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .criteres a:hover {
+        color: #0065FC;
+    }
+    
+    .bullescriteres:hover {
+        background-color: #DEEBFF;
+        color: #0065FC;  
+    }
+    
+    .loupe {
+        size: 30px;
+        margin: auto;
+    }
+    
+    .filtres {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    
+    .line1 {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .research {
+        border: 2px solid #F2F2F2;
+        width: fit-content;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+        margin-left: 15px;
+        padding-left: 0px;
+    }
+    
+    ::placeholder {
+        font-size: 1.1em;
+        margin-left: 5px;
+        font-family: 'Raleway', sans-serif;
+        color: black;
+        font: bolder;
+    }
+    
+    input {
+        height: 40px;
+        padding-right: 40px;
+        
+        border-style: none!important;
+    }
+    
+    .criteres {
+        margin: auto;
+        padding-left: 6px;
+        font-weight: bolder;
+    }
+    
+    .bullescriteres {
+        width: fit-content;
+        margin-left: 0px;
+        display: flex;
+        height: 40px;
+        border-color: #F2F2F2;
+        border-radius: 40px;
+        border-style: solid;
+        border-width: 0.5px;
+        margin-right: 10px;
+        margin-left: 15px;
+        background-color: white;
+        padding-left: 0px;
+        padding-right: 10px;
+        margin-bottom: 10px;
+        color: black;
+        text-decoration: none;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .best {
+        margin-right: -19px
+    }
+
+    .lesoleil {
+        background-image: url(photos/lesoleil.jpg);
+        background-size: contain;
+        border-radius: 20px;
+        width: 92%;
+        height: 180px;
+        margin-top: 0px;
+        margin-left: 6px;
+        margin-right: 0px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        border: 5px solid white;
+    }
+    
+    .coeur {
+        background-image: url(photos/aucoeur.jpg);
+        background-size: contain;
+        border-radius: 20px;
+        height: 180px;
+        width: 92%;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        border: 5px solid white;
+        margin-left: 6px;
+    }
+    
+    
+    .bleuetblanc {
+        background-image: url(photos/bbxlarge.jpg);
+        margin-left: 6px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 92%;
+        height: 180px;
+        border-radius: 20px;
+        margin: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        border: 5px solid white;
+    }
+
+    .intitule {
+        margin-bottom: 0px;
+        margin-top: 80px;
+        margin-left: 30px; 
+    }    
+   
+    .activities {
+       width: 97%; 
+       margin-left: 10px; 
+       margin-top: 0px;
+       margin-bottom: 100px;
+       
+       display: flex;                       
+    }
+   
+    .descactivites {
+       background-color: white;
+       font-size: small;
+       padding-left: 20px;
+       padding-right: 0px;
+       padding-top: 10px;
+       padding-bottom: 10px;
+       border-bottom-left-radius: 10px;
+       border-bottom-right-radius: 10px;
+       justify-content: space-around;
+    }
+   
+   .levieuxport {
+       background-image: url(photos/vieuxport.jpg);
+       background-position: center;
+       margin-left: 0px;
+       width: 305px;
+       height: 400px;
+       padding: 0px;
+       border-radius: 20px;
+       margin-top: 30px;
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-end;
+       border: 5px solid white;
+       box-shadow: 5px 3px 1px rgb(235, 235, 235);
+       
+    }
+   
+    .calanques {
+       background-image: url(photos/calanques.jpg);
+       background-position: center;
+       width: 305px;
+       height: 400px;
+       padding: 0px;
+       border-radius: 20px;
+       margin-left: 30px;
+       margin-top: 30px;
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-end;
+       border: 5px solid white;
+       box-shadow: 5px 3px 1px rgb(235, 235, 235);
+   }
+   
+    .pomegues {
+       background-image: url(photos/pomegues.jpg);
+       background-position: center;
+       width: 305px;
+       height: 200px;
+       padding: 0px;
+       border-radius: 20px;
+       margin-left: 30px;
+       margin-top: 30px;
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-end;
+       border: 5px solid white;
+       box-shadow: 5px 3px 1px rgb(235, 235, 235);
+       border-top-right-radius: 10px;
+   }
+   
+   .notredame {
+       background-image: url(photos/notredame.jpg);
+       background-position: center 10%;
+       width: 305px;
+       height: 160px;
+       padding: 0px;
+       border-radius: 20px;
+       margin-left: 30px;
+       margin-top: 30px;
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-end;
+       border: 5px solid white;
+       box-shadow: 5px 3px 1px rgb(235, 235, 235);
+       border-top-right-radius: 10px;
+      
+   }
+   
+   .frioul {
+       background-image: url(photos/frioul.jpg);
+       background-position: center;
+       width: 305px;
+       height: 160px;
+       padding: 0px;
+       border-radius: 20px;
+       margin-left: 30px;
+       margin-top: 30px;
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-end;
+       border: 5px solid white;
+       box-shadow: 5px 3px 1px rgb(235, 235, 235);
+       grid-column-start: 2;
+       grid-row-start: 2;
+   }
+   
+   
+   .longchamp {
+       background-image: url(photos/longchamp.jpg);
+       background-position: center;
+       width: 305px;
+       height: 200px;
+       padding: 0px;
+       border-radius: 20px;
+       margin-left: 30px;
+       margin-top: 30px;
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-end;
+       border: 5px solid white;
+       box-shadow: 5px 3px 1px rgb(235, 235, 235);
+       grid-row-start: 2;
+   }
+   
+   
+   
+   
+   
+   .listactivites {
+       
+       height: 150px;
+   }
+   
+   .column2 {
+       flex-direction: column;
+   
+   }
+
+}
+
+
+
+
+/* -------------------- DESKTOP VERSION ----------------------------- */
+
+ @media screen and (min-width: 992px) {
     
 div.lookfor {
         display: none!important;
@@ -748,6 +1123,10 @@ body {
     margin: 0px;
     padding-top: 25px;
     font-family: 'Raleway', sans-serif;
+}
+
+.reservia {
+    width: fit-content;
 }
 
 .logo {
@@ -775,7 +1154,7 @@ li:hover {
 }
 
 .principal {
-    display:flex;
+    display: flex;
     justify-content: space-between;
 }
 
