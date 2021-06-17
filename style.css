@@ -1109,10 +1109,6 @@ footer h4 {
        grid-row-start: 2;
    }
    
-   
-   
-   
-   
    .listactivites {
        
        height: 150px;
@@ -1120,8 +1116,25 @@ footer h4 {
    
    .column2 {
        flex-direction: column;
-   
    }
+
+   footer {
+    margin-left: 0px;
+    padding-left: 20px;
+    padding-bottom: 25px;
+    margin-top: 30px;
+    display: flex;
+    background-color: #F2F2F2;
+    
+}
+
+.ourhouses {
+    margin-left: 150px;
+}
+
+.assistance {
+    margin-left: 150px;
+}
 
 }
 
