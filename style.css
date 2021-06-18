@@ -47,6 +47,8 @@ nav {
     display: flex;
     padding-left: 0px;
     margin-top: 0px; 
+    width: calc(100vw - 30px);
+    margin-left: 0px;
 } 
 
 
@@ -67,11 +69,18 @@ li:hover {
     float: inline-start;
     margin-top: 100px;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+
     
 }
 
-
+li#topcorner.rubriques {
+    position: absolute;
+    margin-top: 0px;
+    top: 0px;
+    right: 15px;
+    padding-top: 22px;
+}
 
 li#topcorner a {
    margin-top: 15px;
@@ -252,6 +261,37 @@ input {
     justify-content: flex-end;
     border: 5px solid white;
 }
+
+.lesoleil > .image {
+    width: 40%;
+    height: 100%;
+    background-image: url(photos/lesoleil.jpg);
+    background-position: bottom;
+    background-size: cover;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+ }
+
+ .coeur > .image {
+    width: 39%;
+    height: 100%;
+    background-image: url(photos/aucoeur.jpg);
+    background-position: bottom;
+    background-size: cover;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+ }
+
+ .bleuetblanc > .image {
+    width: 40%;
+    height: 100%;
+    background-image: url(photos/bleuetblanc.jpg);
+    background-position: bottom;
+    background-size: cover;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+ }
+
 
 .populaires {
     width: 100%;
@@ -555,16 +595,8 @@ div.localisation {
     padding-left: 25px;
 }
 
-li#topcorner.rubriques {
-    margin-bottom: 50px;
-    margin-top: 0px;
-    top: 0px;
-    padding-top: 22px;
-    margin-left: -47px;
-}
-
 .rubriques {
-    margin-right: 60px;
+    margin-right: 0px;
     float: right;
     list-style: none;
 }
@@ -595,11 +627,11 @@ i {
 }
 
 .liresponsive {
+
     display: flex;
-    float: inline-start;
     margin-top: 40px;
     flex-direction: row;
-    justify-content: space-between;
+    
 
 }
 
@@ -766,7 +798,11 @@ footer h4 {
     li#topcorner.rubriques {
         padding-top: 0px;
         margin-left: 0px;
-    
+        position: relative;
+    }
+
+    .liresponsive {
+        width: fit-content;
     }
     
     .logo {
@@ -793,6 +829,7 @@ footer h4 {
         flex-direction: row;
         float: right;
         margin-top: 25px;
+        width: fit-content;
     }
 
     .principal {
@@ -978,6 +1015,61 @@ footer h4 {
         border: 5px solid white;
     }
 
+    .lesoleil > .image {
+        width: 40%;
+        height: 100%;
+        background-image: url(photos/lesoleil.jpg);
+        background-position: bottom;
+        background-size: cover;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+     }
+    
+     .coeur > .image {
+        width: 39%;
+        height: 100%;
+        background-image: url(photos/aucoeur.jpg);
+        background-position: bottom;
+        background-size: cover;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+     }
+    
+     .bleuetblanc > .image {
+        width: 40%;
+        height: 100%;
+        background-image: url(photos/bleuetblanc.jpg);
+        background-position: bottom;
+        background-size: cover;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+     }
+     
+
+     .cannebiere {
+         width: 91%;
+     }
+
+     .port {
+        width: 91%;
+    }
+
+    .mouettes {
+        width: 91%;
+    }
+
+    .mer {
+        width: 91%;
+    }
+
+    .panier {
+        width: 91%;
+    }
+
+    .amina {
+        width: 91%;
+    }
+
     .intitule {
         margin-bottom: 0px;
         margin-top: 80px;
@@ -1139,10 +1231,81 @@ footer h4 {
 }
 
 
-/* ++++++++++++++++++ LANDSCAPE VERSION +++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++ LANDSCAPE VERSION +++++++++++++++++++++++++ */
 
 @media (min-width: 992px) and (max-width: 1439.98px) {
+
+    li#topcorner.rubriques {
+        padding-top: 0px;
+        margin-left: 0px;
+        position: relative;
+    }
     
+    .logo {
+        margin-left: 10px;
+        position: relative;
+        max-width: 100px;
+    }
+
+    .intro {
+        
+    }
+
+    .research {
+        margin-left: 25px;
+    }
+    
+    .content {  
+        display: flex;
+        flex-direction: column-reverse;
+        margin-right: 0px;
+    } 
+    
+    .descintro {
+        width: 100%;
+        font-size: 25px;
+    }
+    
+    .menu {
+        right: 0px;
+        display: inline-flex;
+        padding-left: 25px;
+        flex-direction: row;
+        float: right;
+        margin-top: 25px;
+        width: fit-content;
+    }
+
+    .principal {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
+    .rubriques {
+        margin-right: 60px!important;
+        float: right;
+        list-style: none;
+        margin-top: 0px!important;
+        
+    }
+
+    div.liresponsive {
+        margin-top: 0px!important;
+    }
+
+    .filtres {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        padding-left: 20px;
+    }
+
+    #filter {
+        padding-top: 0px;
+        margin-right: 30px;
+    }
+
     .content {
         display: flex;
         flex-direction: row;
@@ -1156,7 +1319,7 @@ footer h4 {
         padding-top: 30px;
         background-color: #F2F2F2;
         border-radius: 20px;
-        width: 70%;
+        width: 50%;
         margin-left: 30px;
         margin-bottom: 0px;
     }
@@ -1177,7 +1340,7 @@ footer h4 {
         background-image: url(photos/lacannebiere.jpg);
         background-size: cover;
         /*background-position-y: -20%;*/
-        width: 240px;
+        width: 39%;
         height: 180px;
         padding: 0px;
         border-radius: 20px;
@@ -1194,7 +1357,7 @@ footer h4 {
         background-image: url(photos/hotelduport.jpg);
         background-size: cover;
         background-position-y: -40px;
-        width: 240px;
+        width: 39%;
         height: 180px;
         padding: 0px;
         border-radius: 20px;
@@ -1211,12 +1374,12 @@ footer h4 {
         background-image: url(photos/lesmouettes.jpg);
         background-size: contain;
         background-position-y: -20%;
-        width: 240px;
+        width: 39%;
         height: 180px;
         padding: 0px;
         border-radius: 20px;
         margin-left: 20px;
-        margin-top: 0px;
+        margin-top: 20px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -1228,7 +1391,7 @@ footer h4 {
         background-image: url(photos/delamer.jpg);
         background-size: contain;
         background-position-y: -40px;
-        width: 240px;
+        width: 39%;
         height: 180px;
         padding: 0px;
         border-radius: 20px;
@@ -1244,7 +1407,7 @@ footer h4 {
      .panier {
         background-image: url(photos/lepanier.jpg);
         background-size: contain;
-        width: 240px;
+        width: 39%;
         height: 180px;
         padding: 0px;
         border-radius: 20px;
@@ -1258,10 +1421,8 @@ footer h4 {
      }
     
      .amina {
-        background-image: url(photos/amina.jpg);
-        background-size: cover;
-        background-position-y: -100px;
-        width: 240px;
+       
+        width: 39%;
         height: 180px;
         padding: 0px;
         border-radius: 20px;
@@ -1273,6 +1434,70 @@ footer h4 {
         border: 5px solid white;
         box-shadow: 5px 3px 1px rgb(235, 235, 235);
      }
+
+     .cannebiere > .image {
+        width: 100%;
+        height: 100%;
+        background-image: url(photos/lacannebiere.jpg);
+        background-position: bottom;
+        background-size: cover;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+     }
+    
+     .port > .image {
+        width: 100%;
+        height: 100%;
+        background-image: url(photos/hotelduport.jpg);
+        background-position: bottom;
+        background-size: cover;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+     }
+    
+     
+    
+     .mouettes > .image {
+        width: 100%;
+        height: 100%;
+        background-image: url(photos/lesmouettes.jpg);
+        background-position: bottom;
+        background-size: cover;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+     }
+    
+     .mer > .image {
+        width: 100%;
+        height: 100%;
+        background-image: url(photos/delamer.jpg);
+        background-position: bottom;
+        background-size: cover;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+     }
+    
+     .panier > .image {
+        width: 100%;
+        height: 100%;
+        background-image: url(photos/lepanier.jpg);
+        background-position: bottom;
+        background-size: cover;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+     }
+    
+     .amina > .image {
+        width: 100%;
+        height: 100%;
+        background-image: url(photos/amina.jpg);
+        background-position: bottom;
+        background-size: cover;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+     }
+    
+
 
      .rated {
         margin-left: 30px;
@@ -1319,8 +1544,12 @@ footer h4 {
         background-color: white;
         font-size: small;
         padding-left: 4px;
-        padding-right: 50px;
+        padding-right: 8px;
         padding-top: 5px;;
+     }
+
+     h3.name {
+         margin-top: 0px;
      }
     
      .lesoleil {
@@ -1367,6 +1596,179 @@ footer h4 {
         justify-content: flex-end;
         border: 5px solid white;
      }
+
+     .lesoleil > .image {
+        width: 50%;
+        height: 100%;
+        background-image: url(photos/lesoleil.jpg);
+        background-position: bottom;
+        background-size: cover;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+     }
+    
+     .coeur > .image {
+        width: 39%;
+        height: 100%;
+        background-image: url(photos/aucoeur.jpg);
+        background-position: bottom;
+        background-size: cover;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+     }
+    
+     .bleuetblanc > .image {
+        width: 51%;
+        height: 100%;
+        background-image: url(photos/bleuetblanc.jpg);
+        background-position: bottom;
+        background-size: cover;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+     }
+    
+
+     .activities {
+
+        width: 96%;
+        margin-left: 15px; 
+        margin-top: 0px;
+        margin-bottom: 100px;
+        
+        display: flex;                       
+     }
+    
+     .descactivites {
+
+        background-color: white;
+        font-size: small;
+        padding-left: 20px;
+        padding-right: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        justify-content: space-around;
+     }
+    
+    .levieuxport {
+        background-image: url(photos/vieuxport.jpg);
+        background-position: center;
+        width: 305px;
+        height: 400px;
+        padding: 0px;
+        border-radius: 20px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border: 5px solid white;
+        box-shadow: 5px 3px 1px rgb(235, 235, 235);
+        
+        
+     }
+    
+     .calanques {
+        background-image: url(photos/calanques.jpg);
+        background-position: center;
+        width: 305px;
+        height: 400px;
+        padding: 0px;
+        border-radius: 20px;
+        margin-left: 30px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border: 5px solid white;
+        box-shadow: 5px 3px 1px rgb(235, 235, 235);
+    }
+    
+     .pomegues {
+        background-image: url(photos/pomegues.jpg);
+        background-position: center;
+        width: 305px;
+        height: 200px;
+        padding: 0px;
+        border-radius: 20px;
+        margin-left: 30px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border: 5px solid white;
+        box-shadow: 5px 3px 1px rgb(235, 235, 235);
+        border-top-right-radius: 10px;
+    }
+    
+    .notredame {
+        background-image: url(photos/notredame.jpg);
+        background-position: center 10%;
+        width: 305px;
+        height: 160px;
+        padding: 0px;
+        border-radius: 20px;
+        margin-left: 30px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border: 5px solid white;
+        box-shadow: 5px 3px 1px rgb(235, 235, 235);
+        border-top-right-radius: 10px;
+       
+    }
+    
+    .frioul {
+        background-image: url(photos/frioul.jpg);
+        background-position: center;
+        width: 305px;
+        height: 160px;
+        padding: 0px;
+        border-radius: 20px;
+        margin-left: 30px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border: 5px solid white;
+        box-shadow: 5px 3px 1px rgb(235, 235, 235);
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+    
+    
+    .longchamp {
+        background-image: url(photos/longchamp.jpg);
+        background-position: center;
+        width: 305px;
+        height: 200px;
+        padding: 0px;
+        border-radius: 20px;
+        margin-left: 30px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border: 5px solid white;
+        box-shadow: 5px 3px 1px rgb(235, 235, 235);
+        grid-row-start: 2;
+    }
+    
+    
+    
+    
+    
+    .listactivites {
+        
+        height: 150px;
+    }
+    
+    .column2 {
+        flex-direction: column;
+    
+    }
+    
 }
 
 
@@ -1424,6 +1826,7 @@ li:hover {
     display: flex;
     padding-left: 25px;
     flex-direction: row;
+    width: fit-content;
 }
 
 div.liresponsive {
@@ -1438,7 +1841,7 @@ li#topcorner a {
 li#topcorner.rubriques {
     padding-top: 0px;
     margin-left: 0px;
-
+    position: relative;
 }
 
 .rubriques {
@@ -1618,7 +2021,7 @@ i {
     background-image: url(photos/lacannebiere.jpg);
     background-size: cover;
     /*background-position-y: -20%;*/
-    width: 240px;
+    width: 27%;
     height: 180px;
     padding: 0px;
     border-radius: 20px;
@@ -1669,7 +2072,7 @@ i {
     background-image: url(photos/hotelduport.jpg);
     background-size: cover;
     background-position-y: -40px;
-    width: 240px;
+    width: 27%;
     height: 180px;
     padding: 0px;
     border-radius: 20px;
@@ -1686,7 +2089,7 @@ i {
     background-image: url(photos/lesmouettes.jpg);
     background-size: contain;
     background-position-y: -20%;
-    width: 240px;
+    width: 27%;
     height: 180px;
     padding: 0px;
     border-radius: 20px;
@@ -1703,7 +2106,7 @@ i {
     background-image: url(photos/delamer.jpg);
     background-size: contain;
     background-position-y: -40px;
-    width: 240px;
+    width: 27%;
     height: 180px;
     padding: 0px;
     border-radius: 20px;
@@ -1719,7 +2122,7 @@ i {
  .panier {
     background-image: url(photos/lepanier.jpg);
     background-size: contain;
-    width: 240px;
+    width: 27%;
     height: 180px;
     padding: 0px;
     border-radius: 20px;
@@ -1736,7 +2139,7 @@ i {
     background-image: url(photos/amina.jpg);
     background-size: cover;
     background-position-y: -100px;
-    width: 240px;
+    width: 27%;
     height: 180px;
     padding: 0px;
     border-radius: 20px;
@@ -1749,6 +2152,67 @@ i {
     box-shadow: 5px 3px 1px rgb(235, 235, 235);
  }
 
+ .cannebiere > .image {
+    width: 100%;
+    height: 100%;
+    background-image: url(photos/lacannebiere.jpg);
+    background-position: bottom;
+    background-size: cover;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+ }
+
+ .port > .image {
+    width: 100%;
+    height: 100%;
+    background-image: url(photos/hotelduport.jpg);
+    background-position: bottom;
+    background-size: cover;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+ }
+
+ 
+
+ .mouettes > .image {
+    width: 100%;
+    height: 100%;
+    background-image: url(photos/lesmouettes.jpg);
+    background-position: bottom;
+    background-size: cover;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+ }
+
+ .mer > .image {
+    width: 100%;
+    height: 100%;
+    background-image: url(photos/delamer.jpg);
+    background-position: bottom;
+    background-size: cover;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+ }
+
+ .panier > .image {
+    width: 100%;
+    height: 100%;
+    background-image: url(photos/lepanier.jpg);
+    background-position: bottom;
+    background-size: cover;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+ }
+
+ .amina > .image {
+    width: 100%;
+    height: 100%;
+    background-image: url(photos/amina.jpg);
+    background-position: bottom;
+    background-size: cover;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+ }
 
  .more {
      padding-top: 30px;
@@ -1827,9 +2291,6 @@ i {
  }
 
  .lesoleil {
-    background-image: url(photos/lesoleil.jpg);
-    background-size: contain;
-    background-position-x: 400px;
     max-width: 350px;
     height: 150px;
     margin: 2px;
@@ -1843,8 +2304,6 @@ i {
  }
 
  .coeur {
-    background-image: url(photos/aucoeur.jpg);
-    background-size: contain;
     max-width: 350px;
     height: 150px;
     margin: 2px;
@@ -1858,7 +2317,6 @@ i {
  }
 
  .bleuetblanc {
-    background-image: url(photos/bleuetblanc.jpg);
     max-width: 350px;
     height: 150px;
     margin: 2px;
@@ -1871,15 +2329,36 @@ i {
     border: 5px solid white;
  }
 
- .framepopu {
-    width: 180px;
-    border-top-left-radius: 15px;
+ .lesoleil > .image {
+    width: 40%;
+    height: 100%;
+    background-image: url(photos/lesoleil.jpg);
+    background-position: bottom;
+    background-size: cover;
     border-bottom-left-radius: 15px;
-}
+    border-top-left-radius: 15px;
+ }
 
- /*.apparts img {
-     border-top-left-radius: 25px; 
-     border-top-right-radius: 25px;*/
+ .coeur > .image {
+    width: 39%;
+    height: 100%;
+    background-image: url(photos/aucoeur.jpg);
+    background-position: bottom;
+    background-size: cover;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+ }
+
+ .bleuetblanc > .image {
+    width: 40%;
+    height: 100%;
+    background-image: url(photos/bleuetblanc.jpg);
+    background-position: bottom;
+    background-size: cover;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+ }
+
  
  .intitule {
      margin-bottom: 0px;
