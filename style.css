@@ -969,6 +969,11 @@ footer h4 {
         margin-right: -19px
     }
 
+    .populaires {
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+
     .lesoleil {
         background-image: url(photos/lesoleil.jpg);
         background-size: contain;
@@ -1008,7 +1013,6 @@ footer h4 {
         width: 92%;
         height: 180px;
         border-radius: 20px;
-        margin: 0px;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
@@ -1069,6 +1073,68 @@ footer h4 {
     .amina {
         width: 91%;
     }
+
+    .cannebiere > .image {
+        width: 100%;
+        height: 100%;
+        background-image: url(photos/lacannebiere.jpg);
+        background-position: bottom;
+        background-size: cover;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+     }
+    
+     .port > .image {
+        width: 100%;
+        height: 100%;
+        background-image: url(photos/hotelduport.jpg);
+        background-position: bottom;
+        background-size: cover;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+     }
+    
+     
+    
+     .mouettes > .image {
+        width: 100%;
+        height: 100%;
+        background-image: url(photos/lesmouettes.jpg);
+        background-position: bottom;
+        background-size: cover;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+     }
+    
+     .mer > .image {
+        width: 100%;
+        height: 100%;
+        background-image: url(photos/delamer.jpg);
+        background-position: bottom;
+        background-size: cover;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+     }
+    
+     .panier > .image {
+        width: 100%;
+        height: 100%;
+        background-image: url(photos/lepanier.jpg);
+        background-position: bottom;
+        background-size: cover;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+     }
+    
+     .amina > .image {
+        width: 100%;
+        height: 100%;
+        background-image: url(photos/amina.jpg);
+        background-position: bottom;
+        background-size: cover;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+     }
 
     .intitule {
         margin-bottom: 0px;
