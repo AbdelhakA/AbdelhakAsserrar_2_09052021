@@ -9,7 +9,7 @@ html {
 body {
     max-width: 100vw;
     width: 100%;
-    margin: 0px;
+    margin: 0 auto;
     padding: 0px;
     padding-top: 25px;
     font-family: 'Raleway', sans-serif;
@@ -17,18 +17,56 @@ body {
 }
 
 nav {
-    margin-left: 15px;
+    
     position: relative;
 }
 
 .logo {
     position: absolute;
+    margin-left: 15px;
 }
 
 .rubriques {
     margin-top: 50px;
     margin-right: 0px
 }
+
+.liresponsive > #heberg {
+    width: 50%;
+    margin-left: 0px;
+    border-bottom: 2px #F2F2F2 solid;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.liresponsive > #activ {
+    width: 50%;
+    margin-left: 0px;
+    border-bottom: 2px #F2F2F2 solid;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+#heberg > a:hover {
+    color: #0065FC;
+    text-decoration: none;
+    border-bottom: #0065FC;
+}
+
+.liresponsive > #heberg:hover {
+    border-color: #0065FC;
+}
+
+#activ > a:hover {
+    color: #0065FC;
+    text-decoration: none;
+    border-bottom: #0065FC;
+}
+
+.liresponsive > #activ:hover {
+    border-color: #0065FC;
+}
+
 
 
 .content {  
@@ -40,6 +78,11 @@ nav {
 .descintro {
     width: 100%;
     font-size: 25px;
+
+}
+
+.intro {
+    padding-left: 0px;
 }
 
 .menu {
@@ -47,8 +90,9 @@ nav {
     display: flex;
     padding-left: 0px;
     margin-top: 0px; 
-    width: calc(100vw - 30px);
+    
     margin-left: 0px;
+    margin-right: 0px;
 } 
 
 
@@ -59,7 +103,6 @@ li {
 
 li:hover {
     color: #0065FC;
-    text-decoration: underline blue 2px;
     
 }
 
@@ -70,8 +113,7 @@ li:hover {
     margin-top: 100px;
     flex-direction: row;
     justify-content: space-around;
-
-    
+    margin: 0 auto;
 }
 
 li#topcorner.rubriques {
@@ -144,17 +186,25 @@ a {
 
 .research {
     border: 2px solid #F2F2F2;
-    width: fit-content;
+    width: 330px;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
-    margin-left: 15px;
+    margin: 0 auto;
+    padding-left: 0px;
+    height: 50px;
+}
+
+.fa-map-marker-alt {
+    font-size: 20px;
+    padding-top: 5px;
     padding-left: 0px;
 }
 
 ::placeholder {
-    font-size: 1.1em;
+    margin-top: 5px;
+    font-size: 18px;
     margin-left: 5px;
     font-family: 'Raleway', sans-serif;
     color: black;
@@ -162,9 +212,9 @@ a {
 }
 
 input {
-    height: 40px;
+    height: 93px;
     padding-right: 40px;
-    
+    width: 230px;
     border-style: none!important;
 }
 
@@ -237,6 +287,7 @@ input {
 .coeur {
     background-image: url(photos/aucoeur.jpg);
     background-size: contain;
+    background-position: right;
     border-radius: 20px;
     width: 92%;
     margin-bottom: 15px;
@@ -248,14 +299,12 @@ input {
 
 
 .bleuetblanc {
-    background-image: url(photos/bbxlarge.jpg);
-    
+    background-image: url(photos/bleuetblanc.jpg);
     background-size: cover;
+    background-position: bottom;
     background-repeat: no-repeat;
     width: 92%;
-    margin: 0px;
     border-radius: 20px;
-    margin: 0px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -266,8 +315,9 @@ input {
     width: 40%;
     height: 100%;
     background-image: url(photos/lesoleil.jpg);
-    background-position: bottom;
+    background-position-y: center;
     background-size: cover;
+    background-repeat: no-repeat;
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
  }
@@ -284,9 +334,8 @@ input {
 
  .bleuetblanc > .image {
     width: 40%;
-    height: 100%;
-    background-image: url(photos/bleuetblanc.jpg);
-    background-position: bottom;
+    background-image: url(photos/xlarge/bbxlarge.jpg);
+    background-position: right;
     background-size: cover;
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
@@ -297,9 +346,14 @@ input {
     width: 100%;
     border-radius: 0px;
     margin: 0px;
-    padding: 10px;
+    padding: 5px;
     background-color: #F2F2F2;
     padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+.best {
+    margin: 0 auto;
 }
 
 .entete {
@@ -319,7 +373,7 @@ i.fa-chart-line {
 
 
 div.localisation {
-    height: 45px;
+    height: 50px;
 }
 
 .accomodations {
@@ -361,7 +415,7 @@ div.localisation {
 .cannebiere {
     width: 94%;
     height: 180px;
-    margin-left: 10px;
+    margin: 0 auto;
     background-image: url(photos/lacannebiere.jpg);
     background-size: cover;
     border-radius: 20px;
@@ -370,7 +424,7 @@ div.localisation {
     flex-direction: column;
     justify-content: flex-end;
     border: 5px solid white;
-    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+    box-shadow: 0px 0px 10px rgb(235, 235, 235);
 }
 
 .port {
@@ -380,12 +434,12 @@ div.localisation {
     background-size: cover;
     background-position-y: -40px;
     border-radius: 20px;
-    margin-left: 10px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     border: 5px solid white;
-    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+    box-shadow: 0px 0px 10px rgb(235, 235, 235);
 }
 
 .mouettes {
@@ -396,12 +450,12 @@ div.localisation {
     background-size: contain;
     background-position-y: -20%;
     border-radius: 20px;
-    margin-left: 10px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     border: 5px solid white;
-    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+    box-shadow: 0px 0px 10px rgb(235, 235, 235);
 }
 
 .mer {
@@ -412,13 +466,13 @@ div.localisation {
     background-size: contain;
     background-position-y: -40px;
     border-radius: 20px;
-    margin-left: 10px;
-    margin-top: 30px;
+    margin: 0 auto;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     border: 5px solid white;
-    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+    box-shadow: 0px 0px 10px rgb(235, 235, 235);
 }
 
 .panier {
@@ -429,13 +483,13 @@ div.localisation {
     background-size: contain;
     padding: 0px;
     border-radius: 20px;
-    margin-left: 10px;
+    margin: 0 auto;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     border: 5px solid white;
-    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+    box-shadow: 0px 0px 10px rgb(235, 235, 235);
 }
 
 .amina {
@@ -446,14 +500,86 @@ div.localisation {
     background-size: cover;
     background-position-y: -100px;
     border-radius: 20px;
-    margin-left: 10px;
+    margin: 0 auto;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     border: 5px solid white;
-    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+    box-shadow: 0px 0px 10px rgb(235, 235, 235);
 }
+
+.cannebiere > .image {
+    width: 100%;
+    height: 100%;
+    background-image: url(photos/lacannebiere.jpg);
+    background-position-y: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+ }
+
+ .port > .image {
+    width: 100%;
+    height: 100%;
+    background-image: url(photos/hotelduport.jpg);
+    background-position-y: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+ }
+
+ 
+
+ .mouettes > .image {
+    width: 100%;
+    height: 100%;
+    background-image: url(photos/lesmouettes.jpg);
+    background-position-y: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+ }
+
+ .mer > .image {
+    width: 100%;
+    height: 100%;
+    background-image: url(photos/delamer.jpg);
+    background-position-y: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+ }
+
+ .panier > .image {
+    width: 100%;
+    height: 100%;
+    background-image: url(photos/lepanier.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+ }
+
+ .amina > .image {
+    width: 100%;
+    height: 100%;
+    background-image: url(photos/amina.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+ }
 
 .more {
     margin-left: 20px;
@@ -494,6 +620,7 @@ div.localisation {
     width: 92%;
     background-image: url(photos/vieuxport.jpg);
     background-position: center;
+    background-size: cover;
     height: 180px;
     border-radius: 20px;
     margin-top: 30px;
@@ -503,13 +630,14 @@ div.localisation {
     flex-direction: column;
     justify-content: flex-end;
     
-    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+    box-shadow: 0px 0px 10px rgb(235, 235, 235);
 }
 
 .calanques {
     width: 92%;
     background-image: url(photos/calanques.jpg);
-    background-position: center;
+    background-position: bottom;
+    background-size: cover;
     height: 180px;
     border-radius: 20px;
     margin-top: 30px;
@@ -517,14 +645,14 @@ div.localisation {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+    box-shadow: 0px 0px 10px rgb(235, 235, 235);
 }
 
 .pomegues {
     width: 92%;
     background-image: url(photos/pomegues.jpg);
     background-position: center;
-    background-repeat: no-repeat;
+    background-size: cover;
     height: 180px;
     border-radius: 20px;
     margin-top: 30px;
@@ -532,13 +660,14 @@ div.localisation {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+    box-shadow: 0px 0px 10px rgb(235, 235, 235);
 }
 
 .frioul {
     width: 92%;
     background-image: url(photos/frioul.jpg);
-    background-position: center;
+    background-position: bottom;
+    background-size: cover;
     height: 180px;
     border-radius: 20px;
     margin-top: 30px;
@@ -546,13 +675,14 @@ div.localisation {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+    box-shadow: 0px 0px 10px rgb(235, 235, 235);
 }
 
 .notredame {
     width: 92%;
     background-image: url(photos/notredame.jpg);
     background-position: center;
+    background-size: cover;
     height: 180px;
     border-radius: 20px;
     margin-top: 30px;
@@ -560,13 +690,14 @@ div.localisation {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+    box-shadow: 0px 0px 10px rgb(235, 235, 235);
 }
 
 .longchamp {
     width: 92%;
     background-image: url(photos/longchamp.jpg);
     background-position: center;
+    background-size: cover;
     height: 180px;
     border-radius: 20px;
     margin-top: 30px;
@@ -574,7 +705,7 @@ div.localisation {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+    box-shadow: 0px 0px 10px rgb(235, 235, 235);
 }
 
 .half2 {
@@ -778,8 +909,11 @@ footer h4 {
 }
 
 /* *******************TABLET VERSION********************* */
+/* *******************TABLET VERSION********************* */
+/* *******************TABLET VERSION********************* */
+/* *******************TABLET VERSION********************* */
 
-@media (min-width: 768px) and (max-width: 991.98px)  {
+@media (min-width: 501px) and (max-width: 991.98px)  {
     html {
         overflow-x: hidden;
         max-width: 100vw;
@@ -788,7 +922,7 @@ footer h4 {
     body {
         max-width: 100vw;
         width: 100%;
-        margin: 0px;
+        margin: 0 auto;
         padding: 0px;
         padding-top: 25px;
         font-family: 'Raleway', sans-serif;
@@ -914,6 +1048,7 @@ footer h4 {
         border-top-left-radius: 20px;
         margin-left: 15px;
         padding-left: 0px;
+        height: 50px;
     }
     
     ::placeholder {
@@ -966,7 +1101,7 @@ footer h4 {
     }
 
     .best {
-        margin-right: -19px
+        margin-top: 10px;
     }
 
     .populaires {
@@ -988,6 +1123,7 @@ footer h4 {
         flex-direction: row;
         justify-content: flex-end;
         border: 5px solid white;
+        box-shadow: 0px 0px 10px rgb(235, 235, 235);
     }
     
     .coeur {
@@ -1002,6 +1138,7 @@ footer h4 {
         justify-content: flex-end;
         border: 5px solid white;
         margin-left: 6px;
+        box-shadow: 0px 0px 10px rgb(235, 235, 235);
     }
     
     
@@ -1017,6 +1154,7 @@ footer h4 {
         flex-direction: row;
         justify-content: flex-end;
         border: 5px solid white;
+        box-shadow: 0px 0px 10px rgb(235, 235, 235);
     }
 
     .lesoleil > .image {
@@ -1033,7 +1171,7 @@ footer h4 {
         width: 39%;
         height: 100%;
         background-image: url(photos/aucoeur.jpg);
-        background-position: bottom;
+        background-position-y: center;
         background-size: cover;
         border-bottom-left-radius: 15px;
         border-top-left-radius: 15px;
@@ -1043,7 +1181,7 @@ footer h4 {
         width: 40%;
         height: 100%;
         background-image: url(photos/bleuetblanc.jpg);
-        background-position: bottom;
+        background-position-y: center;
         background-size: cover;
         border-bottom-left-radius: 15px;
         border-top-left-radius: 15px;
@@ -1052,33 +1190,40 @@ footer h4 {
 
      .cannebiere {
          width: 91%;
+         box-shadow: 0px 0px 10px rgb(235, 235, 235);
      }
 
      .port {
         width: 91%;
+        box-shadow: 0px 0px 10px rgb(235, 235, 235);
+        
     }
 
     .mouettes {
         width: 91%;
+        box-shadow: 0px 0px 10px rgb(235, 235, 235);
     }
 
     .mer {
         width: 91%;
+        box-shadow: 0px 0px 10px rgb(235, 235, 235);
     }
 
     .panier {
         width: 91%;
+        box-shadow: 0px 0px 10px rgb(235, 235, 235);
     }
 
     .amina {
         width: 91%;
+        box-shadow: 0px 0px 10px rgb(235, 235, 235);
     }
 
     .cannebiere > .image {
         width: 100%;
         height: 100%;
         background-image: url(photos/lacannebiere.jpg);
-        background-position: bottom;
+        background-position: center;
         background-size: cover;
         border-top-right-radius: 15px;
         border-top-left-radius: 15px;
@@ -1088,7 +1233,7 @@ footer h4 {
         width: 100%;
         height: 100%;
         background-image: url(photos/hotelduport.jpg);
-        background-position: bottom;
+        background-position: center;
         background-size: cover;
         border-top-right-radius: 15px;
         border-top-left-radius: 15px;
@@ -1100,7 +1245,7 @@ footer h4 {
         width: 100%;
         height: 100%;
         background-image: url(photos/lesmouettes.jpg);
-        background-position: bottom;
+        background-position: center;
         background-size: cover;
         border-top-right-radius: 15px;
         border-top-left-radius: 15px;
@@ -1110,7 +1255,7 @@ footer h4 {
         width: 100%;
         height: 100%;
         background-image: url(photos/delamer.jpg);
-        background-position: bottom;
+        background-position: center;
         background-size: cover;
         border-top-right-radius: 15px;
         border-top-left-radius: 15px;
@@ -1120,7 +1265,7 @@ footer h4 {
         width: 100%;
         height: 100%;
         background-image: url(photos/lepanier.jpg);
-        background-position: bottom;
+        background-position: center;
         background-size: cover;
         border-top-right-radius: 15px;
         border-top-left-radius: 15px;
@@ -1130,7 +1275,7 @@ footer h4 {
         width: 100%;
         height: 100%;
         background-image: url(photos/amina.jpg);
-        background-position: bottom;
+        background-position: center;
         background-size: cover;
         border-top-right-radius: 15px;
         border-top-left-radius: 15px;
@@ -1161,6 +1306,7 @@ footer h4 {
        border-bottom-left-radius: 10px;
        border-bottom-right-radius: 10px;
        justify-content: space-around;
+       box-shadow: 0px 0px 10px rgb(235, 235, 235);
     }
    
    .levieuxport {
@@ -1176,7 +1322,7 @@ footer h4 {
        flex-direction: column;
        justify-content: flex-end;
        border: 5px solid white;
-       box-shadow: 5px 3px 1px rgb(235, 235, 235);
+       box-shadow: 0px 0px 10px rgb(235, 235, 235);
        
     }
    
@@ -1193,7 +1339,7 @@ footer h4 {
        flex-direction: column;
        justify-content: flex-end;
        border: 5px solid white;
-       box-shadow: 5px 3px 1px rgb(235, 235, 235);
+       box-shadow: 0px 0px 10px rgb(235, 235, 235);
    }
    
     .pomegues {
@@ -1209,7 +1355,7 @@ footer h4 {
        flex-direction: column;
        justify-content: flex-end;
        border: 5px solid white;
-       box-shadow: 5px 3px 1px rgb(235, 235, 235);
+       box-shadow: 0px 0px 10px rgb(235, 235, 235);
        border-top-right-radius: 10px;
    }
    
@@ -1226,7 +1372,7 @@ footer h4 {
        flex-direction: column;
        justify-content: flex-end;
        border: 5px solid white;
-       box-shadow: 5px 3px 1px rgb(235, 235, 235);
+       box-shadow: 0px 0px 10px rgb(235, 235, 235);
        border-top-right-radius: 10px;
       
    }
@@ -1244,7 +1390,7 @@ footer h4 {
        flex-direction: column;
        justify-content: flex-end;
        border: 5px solid white;
-       box-shadow: 5px 3px 1px rgb(235, 235, 235);
+       box-shadow: 0px 0px 10px rgb(235, 235, 235);
        grid-column-start: 2;
        grid-row-start: 2;
    }
@@ -1263,7 +1409,7 @@ footer h4 {
        flex-direction: column;
        justify-content: flex-end;
        border: 5px solid white;
-       box-shadow: 5px 3px 1px rgb(235, 235, 235);
+       box-shadow: 0px 0px 10px rgb(235, 235, 235);
        grid-row-start: 2;
    }
    
@@ -1298,6 +1444,9 @@ footer h4 {
 
 
 /* ++++++++++++++++++ LANDSCAPE VERSION +++++++++++++++++++++++++ */
+/* ++++++++++++++++++ LANDSCAPE VERSION +++++++++++++++++++++++++ */
+/* ++++++++++++++++++ LANDSCAPE VERSION +++++++++++++++++++++++++ */
+/* ++++++++++++++++++ LANDSCAPE VERSION +++++++++++++++++++++++++ */
 
 @media (min-width: 992px) and (max-width: 1439.98px) {
 
@@ -1319,12 +1468,15 @@ footer h4 {
 
     .research {
         margin-left: 25px;
+        width: fit-content;
+        height: 50px;
     }
     
     .content {  
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: row;
         margin-right: 0px;
+        
     } 
     
     .descintro {
@@ -1371,11 +1523,6 @@ footer h4 {
         padding-top: 0px;
         margin-right: 30px;
     }
-
-    .content {
-        display: flex;
-        flex-direction: row;
-    }
     
     .accomodations {
         padding-left: 0px;
@@ -1398,14 +1545,13 @@ footer h4 {
     .choice {
         display: flex;
         flex-wrap: wrap;
-        padding-left: 29px;
+        padding-left: 20px;
         padding-top: 20px;
     }
     
     .cannebiere {
         background-image: url(photos/lacannebiere.jpg);
         background-size: cover;
-        /*background-position-y: -20%;*/
         width: 39%;
         height: 180px;
         padding: 0px;
@@ -1415,7 +1561,7 @@ footer h4 {
         flex-direction: column;
         justify-content: flex-end;
         border: 5px solid white;
-        box-shadow: 5px 3px 1px rgb(235, 235, 235);
+        box-shadow: 0px 0px 10px rgb(235, 235, 235);
         margin-right: 20px;
     }
 
@@ -1433,7 +1579,7 @@ footer h4 {
         flex-direction: column;
         justify-content: flex-end;
         border: 5px solid white;
-        box-shadow: 5px 3px 1px rgb(235, 235, 235);
+        box-shadow: 0px 0px 10px rgb(235, 235, 235);
      }
     
      .mouettes {
@@ -1450,7 +1596,7 @@ footer h4 {
         flex-direction: column;
         justify-content: flex-end;
         border: 5px solid white;
-        box-shadow: 5px 3px 1px rgb(235, 235, 235);
+        box-shadow: 0px 0px 10px rgb(235, 235, 235);
      }
     
      .mer {
@@ -1467,7 +1613,7 @@ footer h4 {
         flex-direction: column;
         justify-content: flex-end;
         border: 5px solid white;
-        box-shadow: 5px 3px 1px rgb(235, 235, 235);
+        box-shadow: 0px 0px 10px rgb(235, 235, 235);
      }
     
      .panier {
@@ -1483,7 +1629,7 @@ footer h4 {
         flex-direction: column;
         justify-content: flex-end;
         border: 5px solid white;
-        box-shadow: 5px 3px 1px rgb(235, 235, 235);
+        box-shadow: 0px 0px 10px rgb(235, 235, 235);
      }
     
      .amina {
@@ -1498,14 +1644,14 @@ footer h4 {
         flex-direction: column;
         justify-content: flex-end;
         border: 5px solid white;
-        box-shadow: 5px 3px 1px rgb(235, 235, 235);
+        box-shadow: 0px 0px 10px rgb(235, 235, 235);
      }
 
      .cannebiere > .image {
         width: 100%;
         height: 100%;
         background-image: url(photos/lacannebiere.jpg);
-        background-position: bottom;
+        background-position-y: center;
         background-size: cover;
         border-top-right-radius: 15px;
         border-top-left-radius: 15px;
@@ -1515,7 +1661,7 @@ footer h4 {
         width: 100%;
         height: 100%;
         background-image: url(photos/hotelduport.jpg);
-        background-position: bottom;
+        background-position-y: center;
         background-size: cover;
         border-top-right-radius: 15px;
         border-top-left-radius: 15px;
@@ -1527,7 +1673,7 @@ footer h4 {
         width: 100%;
         height: 100%;
         background-image: url(photos/lesmouettes.jpg);
-        background-position: bottom;
+        background-position-y: center;
         background-size: cover;
         border-top-right-radius: 15px;
         border-top-left-radius: 15px;
@@ -1537,7 +1683,7 @@ footer h4 {
         width: 100%;
         height: 100%;
         background-image: url(photos/delamer.jpg);
-        background-position: bottom;
+        background-position-y: center;
         background-size: cover;
         border-top-right-radius: 15px;
         border-top-left-radius: 15px;
@@ -1547,7 +1693,7 @@ footer h4 {
         width: 100%;
         height: 100%;
         background-image: url(photos/lepanier.jpg);
-        background-position: bottom;
+        background-position-y: center;
         background-size: cover;
         border-top-right-radius: 15px;
         border-top-left-radius: 15px;
@@ -1557,7 +1703,7 @@ footer h4 {
         width: 100%;
         height: 100%;
         background-image: url(photos/amina.jpg);
-        background-position: bottom;
+        background-position-y: center;
         background-size: cover;
         border-top-right-radius: 15px;
         border-top-left-radius: 15px;
@@ -1593,6 +1739,7 @@ footer h4 {
          justify-content: space-between;
          padding-top: 23px;
      }
+
      
     .fa-chart-line {
         float: right;
@@ -1619,7 +1766,6 @@ footer h4 {
      }
     
      .lesoleil {
-        background-image: url(photos/lesoleil.jpg);
         background-size: contain;
         background-position-x: 400px;
         max-width: 350px;
@@ -1632,10 +1778,10 @@ footer h4 {
         flex-direction: row;
         justify-content: flex-end;
         border: 5px solid white;
+        box-shadow: 0px 0px 10px rgb(235, 235, 235);
      }
     
      .coeur {
-        background-image: url(photos/aucoeur.jpg);
         background-size: contain;
         max-width: 350px;
         height: 150px;
@@ -1647,10 +1793,10 @@ footer h4 {
         flex-direction: row;
         justify-content: flex-end;
         border: 5px solid white;
+        box-shadow: 0px 0px 10px rgb(235, 235, 235);
      }
     
      .bleuetblanc {
-        background-image: url(photos/bleuetblanc.jpg);
         max-width: 350px;
         height: 150px;
         margin: 2px;
@@ -1661,13 +1807,14 @@ footer h4 {
         flex-direction: row;
         justify-content: flex-end;
         border: 5px solid white;
+        box-shadow: 0px 0px 10px rgb(235, 235, 235);
      }
 
      .lesoleil > .image {
         width: 50%;
         height: 100%;
         background-image: url(photos/lesoleil.jpg);
-        background-position: bottom;
+        background-position: right;
         background-size: cover;
         border-bottom-left-radius: 15px;
         border-top-left-radius: 15px;
@@ -1687,7 +1834,7 @@ footer h4 {
         width: 51%;
         height: 100%;
         background-image: url(photos/bleuetblanc.jpg);
-        background-position: bottom;
+        background-position-y: center;
         background-size: cover;
         border-bottom-left-radius: 15px;
         border-top-left-radius: 15px;
@@ -1695,17 +1842,14 @@ footer h4 {
     
 
      .activities {
-
         width: 96%;
         margin-left: 15px; 
         margin-top: 0px;
         margin-bottom: 100px;
-        
         display: flex;                       
      }
     
      .descactivites {
-
         background-color: white;
         font-size: small;
         padding-left: 20px;
@@ -1719,7 +1863,8 @@ footer h4 {
     
     .levieuxport {
         background-image: url(photos/vieuxport.jpg);
-        background-position: center;
+        background-position-y: center;
+        background-size: cover;
         width: 305px;
         height: 400px;
         padding: 0px;
@@ -1729,14 +1874,13 @@ footer h4 {
         flex-direction: column;
         justify-content: flex-end;
         border: 5px solid white;
-        box-shadow: 5px 3px 1px rgb(235, 235, 235);
-        
-        
+        box-shadow: 0px 0px 10px rgb(235, 235, 235);
      }
     
      .calanques {
         background-image: url(photos/calanques.jpg);
-        background-position: center;
+        background-position-y: center;
+        background-size: cover;
         width: 305px;
         height: 400px;
         padding: 0px;
@@ -1747,12 +1891,13 @@ footer h4 {
         flex-direction: column;
         justify-content: flex-end;
         border: 5px solid white;
-        box-shadow: 5px 3px 1px rgb(235, 235, 235);
+        box-shadow: 0px 0px 10px rgb(235, 235, 235);
     }
     
      .pomegues {
         background-image: url(photos/pomegues.jpg);
-        background-position: center;
+        background-position-y: center;
+        background-size: cover;
         width: 305px;
         height: 200px;
         padding: 0px;
@@ -1763,13 +1908,14 @@ footer h4 {
         flex-direction: column;
         justify-content: flex-end;
         border: 5px solid white;
-        box-shadow: 5px 3px 1px rgb(235, 235, 235);
+        box-shadow: 0px 0px 10px rgb(235, 235, 235);
         border-top-right-radius: 10px;
     }
     
     .notredame {
         background-image: url(photos/notredame.jpg);
-        background-position: center 10%;
+        background-position-y: inherit;
+        background-size: cover;
         width: 305px;
         height: 160px;
         padding: 0px;
@@ -1780,14 +1926,15 @@ footer h4 {
         flex-direction: column;
         justify-content: flex-end;
         border: 5px solid white;
-        box-shadow: 5px 3px 1px rgb(235, 235, 235);
+        box-shadow: 0px 0px 10px rgb(235, 235, 235);
         border-top-right-radius: 10px;
        
     }
     
     .frioul {
         background-image: url(photos/frioul.jpg);
-        background-position: center;
+        background-position-y: center;
+        background-size: cover;
         width: 305px;
         height: 160px;
         padding: 0px;
@@ -1798,7 +1945,7 @@ footer h4 {
         flex-direction: column;
         justify-content: flex-end;
         border: 5px solid white;
-        box-shadow: 5px 3px 1px rgb(235, 235, 235);
+        box-shadow: 0px 0px 10px rgb(235, 235, 235);
         grid-column-start: 2;
         grid-row-start: 2;
     }
@@ -1806,7 +1953,8 @@ footer h4 {
     
     .longchamp {
         background-image: url(photos/longchamp.jpg);
-        background-position: center;
+        background-position-y: center;
+    background-size: cover;
         width: 305px;
         height: 200px;
         padding: 0px;
@@ -1817,7 +1965,7 @@ footer h4 {
         flex-direction: column;
         justify-content: flex-end;
         border: 5px solid white;
-        box-shadow: 5px 3px 1px rgb(235, 235, 235);
+        box-shadow: 0px 0px 10px rgb(235, 235, 235);
         grid-row-start: 2;
     }
     
@@ -1840,15 +1988,25 @@ footer h4 {
 
 
 /* -------------------- DESKTOP VERSION ----------------------------- */
+/* -------------------- DESKTOP VERSION ----------------------------- */
+/* -------------------- DESKTOP VERSION ----------------------------- */
+/* -------------------- DESKTOP VERSION ----------------------------- */
+
 
  @media screen and (min-width: 1440px) {
     
-div.lookfor {
+header {
+    margin: 0 auto;
+    
+}
+
+    div.lookfor {
         display: none!important;
        margin: auto;   
 }
    
 body {
+    max-width: 1440px;
     margin: 0px;
     padding-top: 25px;
     font-family: 'Raleway', sans-serif;
@@ -1872,6 +2030,8 @@ li:hover {
 
 .research {
     padding-left: 25px;
+    width: fit-content;
+    margin-left: 30px;
 }
 
 ::placeholder {
@@ -1934,7 +2094,7 @@ li:hover {
 
 
 input {
-    height: 40px;
+    height: 50px;
     padding-right: 40px;
     border-style: solid;
     border-color: #F2F2F2;
@@ -1971,16 +2131,19 @@ i {
     width: fit-content;
     border-bottom-left-radius: 0px; 
     border-top-left-radius: 0px;
+    height: 50px;
 }
 
 .content {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .research {
     display: flex;
     padding-left: 0px;
+    height: 50px;
 }
  
 .filtres {
@@ -2072,21 +2235,20 @@ i {
 }
 
 .title{
-    margin-left: 52px;
+    margin-left: 42px;
     font-weight: bolder;
 }
 
 .choice {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 29px;
+    padding-left: 20px;
     padding-top: 20px;
 }
 
 .cannebiere {
     background-image: url(photos/lacannebiere.jpg);
     background-size: cover;
-    /*background-position-y: -20%;*/
     width: 27%;
     height: 180px;
     padding: 0px;
@@ -2096,7 +2258,7 @@ i {
     flex-direction: column;
     justify-content: flex-end;
     border: 5px solid white;
-    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+    box-shadow: 0px 0px 10px rgb(235, 235, 235);
     margin-right: 20px;
 }
 
@@ -2148,7 +2310,7 @@ i {
     flex-direction: column;
     justify-content: flex-end;
     border: 5px solid white;
-    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+    box-shadow: 0px 0px 10px rgb(235, 235, 235);
  }
 
  .mouettes {
@@ -2165,7 +2327,7 @@ i {
     flex-direction: column;
     justify-content: flex-end;
     border: 5px solid white;
-    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+    box-shadow: 0px 0px 10px rgb(235, 235, 235);
  }
 
  .mer {
@@ -2182,7 +2344,7 @@ i {
     flex-direction: column;
     justify-content: flex-end;
     border: 5px solid white;
-    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+    box-shadow: 0px 0px 10px rgb(235, 235, 235);
  }
 
  .panier {
@@ -2198,7 +2360,7 @@ i {
     flex-direction: column;
     justify-content: flex-end;
     border: 5px solid white;
-    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+    box-shadow: 0px 0px 10px rgb(235, 235, 235);
  }
 
  .amina {
@@ -2215,14 +2377,14 @@ i {
     flex-direction: column;
     justify-content: flex-end;
     border: 5px solid white;
-    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+    box-shadow: 0px 0px 10px rgb(235, 235, 235);
  }
 
  .cannebiere > .image {
     width: 100%;
     height: 100%;
     background-image: url(photos/lacannebiere.jpg);
-    background-position: bottom;
+    background-position-y: center;
     background-size: cover;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
@@ -2232,7 +2394,7 @@ i {
     width: 100%;
     height: 100%;
     background-image: url(photos/hotelduport.jpg);
-    background-position: bottom;
+    background-position-y: center;
     background-size: cover;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
@@ -2244,7 +2406,7 @@ i {
     width: 100%;
     height: 100%;
     background-image: url(photos/lesmouettes.jpg);
-    background-position: bottom;
+    background-position-y: center;
     background-size: cover;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
@@ -2254,7 +2416,7 @@ i {
     width: 100%;
     height: 100%;
     background-image: url(photos/delamer.jpg);
-    background-position: bottom;
+    background-position-y: center;
     background-size: cover;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
@@ -2274,7 +2436,7 @@ i {
     width: 100%;
     height: 100%;
     background-image: url(photos/amina.jpg);
-    background-position: bottom;
+    background-position: right;
     background-size: cover;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
@@ -2367,6 +2529,7 @@ i {
     flex-direction: row;
     justify-content: flex-end;
     border: 5px solid white;
+    box-shadow: 0px 0px 10px rgb(235, 235, 235);
  }
 
  .coeur {
@@ -2380,6 +2543,7 @@ i {
     flex-direction: row;
     justify-content: flex-end;
     border: 5px solid white;
+    box-shadow: 0px 0px 10px rgb(235, 235, 235);
  }
 
  .bleuetblanc {
@@ -2393,6 +2557,7 @@ i {
     flex-direction: row;
     justify-content: flex-end;
     border: 5px solid white;
+    box-shadow: 0px 0px 10px rgb(235, 235, 235);
  }
 
  .lesoleil > .image {
@@ -2419,11 +2584,13 @@ i {
     width: 40%;
     height: 100%;
     background-image: url(photos/bleuetblanc.jpg);
-    background-position: bottom;
+    background-position-y: center;
     background-size: cover;
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
  }
+
+
 
  
  .intitule {
@@ -2433,11 +2600,10 @@ i {
  }    
 
  .activities {
-     
+    
     margin-left: 30px; 
     margin-top: 0px;
     margin-bottom: 100px;
-    
     display: flex;                       
  }
 
@@ -2455,7 +2621,8 @@ i {
 
 .levieuxport {
     background-image: url(photos/vieuxport.jpg);
-    background-position: center;
+    background-position-y: center;
+    background-size: cover;
     width: 305px;
     height: 400px;
     padding: 0px;
@@ -2465,14 +2632,15 @@ i {
     flex-direction: column;
     justify-content: flex-end;
     border: 5px solid white;
-    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+    box-shadow: 0px 0px 10px rgb(235, 235, 235);
     grid-row-start: 1;
     
  }
 
  .calanques {
     background-image: url(photos/calanques.jpg);
-    background-position: center;
+    background-position-y: center;
+    background-size: cover;
     width: 305px;
     height: 400px;
     padding: 0px;
@@ -2483,12 +2651,13 @@ i {
     flex-direction: column;
     justify-content: flex-end;
     border: 5px solid white;
-    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+    box-shadow: 0px 0px 10px rgb(235, 235, 235);
 }
 
  .pomegues {
     background-image: url(photos/pomegues.jpg);
-    background-position: center;
+    background-position-y: center;
+    background-size: cover;
     width: 305px;
     height: 200px;
     padding: 0px;
@@ -2499,13 +2668,14 @@ i {
     flex-direction: column;
     justify-content: flex-end;
     border: 5px solid white;
-    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+    box-shadow: 0px 0px 10px rgb(235, 235, 235);
     border-top-right-radius: 10px;
 }
 
 .notredame {
     background-image: url(photos/notredame.jpg);
-    background-position: center 10%;
+    background-size: cover;
+    background-position-y: inherit;
     width: 305px;
     height: 160px;
     padding: 0px;
@@ -2516,14 +2686,15 @@ i {
     flex-direction: column;
     justify-content: flex-end;
     border: 5px solid white;
-    box-shadow: 5px 3px 1px rgb(235, 235, 235);
+    box-shadow: 0px 0px 10px rgb(235, 235, 235);
     border-top-right-radius: 10px;
    
 }
 
 .frioul {
     background-image: url(photos/frioul.jpg);
-    background-position: center;
+    background-position-y: center;
+    background-size: cover;
     width: 305px;
     height: 160px;
     padding: 0px;
@@ -2534,15 +2705,14 @@ i {
     flex-direction: column;
     justify-content: flex-end;
     border: 5px solid white;
-    box-shadow: 5px 3px 1px rgb(235, 235, 235);
-    grid-column-start: 2;
-    grid-row-start: 2;
+    box-shadow: 0px 0px 10px rgb(235, 235, 235);
 }
 
 
 .longchamp {
     background-image: url(photos/longchamp.jpg);
-    background-position: center;
+    background-position-y: center;
+    background-size: cover;
     width: 305px;
     height: 200px;
     padding: 0px;
@@ -2553,8 +2723,7 @@ i {
     flex-direction: column;
     justify-content: flex-end;
     border: 5px solid white;
-    box-shadow: 5px 3px 1px rgb(235, 235, 235);
-    grid-row-start: 2;
+    box-shadow: 0px 0px 10px rgb(235, 235, 235);
 }
 
 
