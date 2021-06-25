@@ -1530,7 +1530,10 @@ footer h4 {
     }
 
     .rechercher {
-        width:fit-content
+        width: fit-content;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+
     }
 
     .buttonname {
