@@ -31,7 +31,14 @@ nav {
     margin-right: 0px
 }
 
-.liresponsive > #heberg {
+.menu_central {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    padding-left: 0px;
+}
+
+.menu_central > #heberg {
     width: 50%;
     margin-left: 0px;
     border-bottom: 2px #F2F2F2 solid;
@@ -39,7 +46,7 @@ nav {
     padding-bottom: 15px;
 }
 
-.liresponsive > #activ {
+.menu_central > #activ {
     width: 50%;
     margin-left: 0px;
     border-bottom: 2px #F2F2F2 solid;
@@ -121,7 +128,7 @@ li#topcorner.rubriques {
     margin-top: 0px;
     top: 0px;
     right: 15px;
-    padding-top: 22px;
+    padding-top: 44px;
 }
 
 li#topcorner a {
@@ -136,7 +143,7 @@ a {
     color: black;
 }
 
-.lookfor {
+#lookfor {
     color: white; 
     margin: auto;
 
@@ -152,7 +159,7 @@ button {
     padding: 0%;
     border-radius: 15px;
     width: 50px;
-    
+    color: #0065FC;
 }
 
 a {
@@ -252,6 +259,8 @@ input {
     color:#0065FC;
     display: flex;
     align-items: center;
+    margin-top: -2px;
+    margin-left: -2px;
 }
 
 #bill {
@@ -872,7 +881,7 @@ i {
     
 }
 
- .buttonname {
+ #buttonname {
     display: none;
 } 
 
@@ -990,12 +999,12 @@ footer h4 {
     }
 
 
-    .liresponsive > #heberg {
+    .menu_central > #heberg {
         
         border-bottom: none;
     }
 
-    .liresponsive > #activ {
+    .menu_central > #activ {
         border-top: none;
         border-bottom: none;
     }
@@ -1008,6 +1017,13 @@ footer h4 {
     }
 
     #heberg > a:hover {
+        padding-top: 48px;
+        color: #0065FC;
+        text-decoration: none;
+        border-top: 2px #0065FC solid;
+    }
+
+    #topcorner > a:hover {
         padding-top: 48px;
         color: #0065FC;
         text-decoration: none;
@@ -1026,6 +1042,7 @@ footer h4 {
 
     .liresponsive {
         width: fit-content;
+        margin-top: 0px;
     }
     
     .logo {
@@ -1071,7 +1088,7 @@ footer h4 {
         color: black;
     }
     
-    .lookfor {
+    #lookfor {
         color: white; 
         margin: auto;
         
@@ -1534,7 +1551,7 @@ footer h4 {
         height: 50px;
     }
 
-    .lookfor {
+    #lookfor {
         display: none;
     }
 
@@ -1545,7 +1562,7 @@ footer h4 {
 
     }
 
-    .buttonname {
+    #buttonname {
         font-size: 15px;
         display: flex;
         padding: 0 15px
@@ -1594,16 +1611,16 @@ footer h4 {
         
     }
 
-    div.liresponsive {
+    .liresponsive {
         margin-top: 0px!important;
     }
 
-    .liresponsive > #heberg {
+    .menu_central > #heberg {
         
         border-bottom: none;
     }
 
-    .liresponsive > #activ {
+    .menu_central > #activ {
         border-top: none;
         border-bottom: none;
     }
@@ -2144,8 +2161,8 @@ header {
     margin: 0 auto;
 }
 
-    div.lookfor {
-        display: none!important;
+    #lookfor {
+    display: none!important;
        margin: auto;   
 }
    
@@ -2199,7 +2216,7 @@ li:hover {
     width: fit-content;
 }
 
-div.liresponsive {
+.liresponsive {
     margin-top: 0px!important;
 }
 
@@ -2207,31 +2224,32 @@ li#topcorner a {
     padding-top: 0px;
 }
 
-.liresponsive > #heberg {   
+
+.menu_central > #heberg {   
     border-bottom: none;
 }
 
-.liresponsive > #activ {
+.menu_central > #activ {
     border-top: none;
     border-bottom: none;
 }
 
 #activ > a:hover {
-    padding-top: 23px;
+    padding-top: 42px;
     color: #0065FC;
     text-decoration: none;
     border-top: 2px #0065FC solid;
 }
 
 #heberg > a:hover {
-    padding-top: 23px;
+    padding-top: 42px;
     color: #0065FC;
     text-decoration: none;
     border-top: 2px #0065FC solid;
 }
 
 #topcorner > a:hover {
-    padding-top: 23px;
+    padding-top: 42px;
     color: #0065FC;
     text-decoration: none;
     border-top: 2px #0065FC solid;
@@ -2256,7 +2274,7 @@ li#topcorner.rubriques {
     margin-left: 10px;
 }
 
-.buttonname {
+#buttonname {
     font-size: 15px;
     display: flex;
     padding: 0 15px
@@ -2404,6 +2422,7 @@ i {
     width: 70%;
     margin-left: 30px;
     margin-bottom: 0px;
+    justify-content: initial;
 }
 
 .title{

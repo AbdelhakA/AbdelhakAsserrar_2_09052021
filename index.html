@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width>, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link title="style.css" rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/6250094159.js" crossorigin="anonymous"></script>
 </head>
    
@@ -17,10 +17,13 @@
                 <img class="logo" src="photos/Reservia@3x.png" alt="Logo Reservia">
             </div>
             <ul class="menu">
-                <div class="liresponsive">
-                        <li id="heberg" class="rubriques"><a href="#hebergements">Hébergements</a></li>
+                <li class="liresponsive">
+                    <ul class="menu_central">
                         <li id="activ" class="rubriques"><a href="#tourisme">Activités</a></li>
-                </div>        
+                        <li id="heberg" class="rubriques"><a href="#hebergements">Hébergements</a></li>   
+                    </ul>
+                </li>
+ 
                     <li id="topcorner" class="rubriques"><a href="#">S'inscrire</a></li>        
             </ul>
         </nav>
@@ -31,8 +34,7 @@
         <div class="research">
             <div class="localisation"><i id="where" class="fas fa-map-marker-alt"></i></div>
             <div class="barre"><input type="search" placeholder=" Marseille, France"></div>
-            <button class="rechercher"><div class="buttonname">Rechercher</div><div class="lookfor"><i class="loupe fas fa-search"></i></div></button>
-
+            <button class="rechercher"><span id="buttonname">Rechercher</span><i id="lookfor" class="loupe fas fa-search"></i></button>
         </div>
         
         <div class="filtres">
@@ -214,7 +216,6 @@
             <p id="contact">Nous contacter</p>
         </div>
     </footer>
-</div>
 </body>
 
 </html>
