@@ -160,6 +160,7 @@ button {
     border-radius: 15px;
     width: 50px;
     color: #0065FC;
+    cursor: pointer;
 }
 
 a {
@@ -259,7 +260,7 @@ input {
 }
 
 #bill {
-    /* margin-left: 30%; */
+    
     font-size: 18px;
     margin: 0 auto;
     display: flex;
@@ -268,7 +269,6 @@ input {
 }
 
 #child {
-    /* margin-left: 30%; */
     font-size: 20px;
     margin: 0 auto;
     display: flex;
@@ -277,7 +277,6 @@ input {
 }
 
 #heart {
-    /* margin-left: 30%; */
     font-size: 20px;
     margin: 0 auto;
     display: flex;
@@ -286,7 +285,6 @@ input {
 }
 
 #dog {
-    /* margin-left: 30%; */
     font-size: 20px;
     margin: 0 auto;
     display: flex;
@@ -339,7 +337,6 @@ input {
  }
 
 .lesoleil {
-    /* background-image: url(photos/lesoleil.jpg); */
     background-size: contain;
     border-radius: 20px;
     width: 92%;
@@ -354,7 +351,6 @@ input {
 }
 
 .coeur {
-    /* background-image: url(photos/aucoeur.jpg); */
     background-size: contain;
     background-position: right;
     border-radius: 20px;
@@ -368,7 +364,6 @@ input {
 
 
 .bleuetblanc {
-    /* background-image: url(photos/bleuetblanc.jpg); */
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -412,7 +407,6 @@ input {
 
 
 .populaires {
-
     width: 100%;
     border-radius: 0px;
     background-color: #F2F2F2;
@@ -427,7 +421,6 @@ input {
     margin-top: 5px;
     font-size: 16px;
     font-weight: bold;
-    
 }
 
 
@@ -522,7 +515,6 @@ div.localisation {
     background-image: url(photos/lacannebiere.jpg);
     background-size: cover;
     border-radius: 20px;
-    /* margin-bottom: 15px; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -533,7 +525,6 @@ div.localisation {
 .port {
     width: 92%;
     height: 180px;
-    /* background-image: url(photos/hotelduport.jpg); */
     background-size: cover;
     background-position-y: -40px;
     border-radius: 20px;
@@ -547,7 +538,6 @@ div.localisation {
 .mouettes {
     width: 92%;
     height: 180px;
-    /* margin: 20px; */
     background-image: url(photos/lesmouettes.jpg);
     background-size: contain;
     background-position-y: -20%;
@@ -562,12 +552,9 @@ div.localisation {
 .mer {
     width: 92%;
     height: 180px;
-    /* margin: 20px; */
-    /* background-image: url(photos/delamer.jpg); */
     background-size: contain;
     background-position-y: -40px;
     border-radius: 20px;
-    /* margin-top: 10px; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -578,12 +565,9 @@ div.localisation {
 .panier {
     width: 92%;
     height: 180px;
-    /* margin: 20px; */
-    /* background-image: url(photos/lepanier.jpg); */
     background-size: contain;
     padding: 0px;
     border-radius: 20px;
-    /* margin-top: 30px; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -594,12 +578,9 @@ div.localisation {
 .amina {
     width: 92%;
     height: 180px;
-    /* margin: 20px; */
-    /* background-image: url(photos/amina.jpg); */
     background-size: cover;
     background-position-y: -100px;
     border-radius: 20px;
-    /* margin-top: 30px; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -731,7 +712,6 @@ div.localisation {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    
     box-shadow: 0px 0px 10px rgb(235, 235, 235);
 }
 
@@ -968,9 +948,6 @@ footer h4 {
 }
 
 /* *******************TABLET VERSION********************* */
-/* *******************TABLET VERSION********************* */
-/* *******************TABLET VERSION********************* */
-/* *******************TABLET VERSION********************* */
 
 @media (min-width: 601px) and (max-width: 991.98px)  {
     html {
@@ -1182,7 +1159,6 @@ footer h4 {
     }
 
     .lesoleil {
-        /* background-image: url(photos/lesoleil.jpg); */
         background-size: contain;
         border-radius: 20px;
         width: 70%;
@@ -1199,7 +1175,6 @@ footer h4 {
     }
     
     .coeur {
-        /* background-image: url(photos/aucoeur.jpg); */
         background-size: contain;
         border-radius: 20px;
         height: 180px;
@@ -1215,7 +1190,6 @@ footer h4 {
     
     
     .bleuetblanc {
-        /* background-image: url(photos/bbxlarge.jpg); */
         margin-left: 6px;
         background-size: cover;
         background-repeat: no-repeat;
@@ -1230,7 +1204,7 @@ footer h4 {
     }
 
     .lesoleil > .image {
-        width: 60%;
+        width: 45%;
         height: 100%;
         background-image: url(photos/lesoleil.jpg);
         background-position: bottom;
@@ -1257,10 +1231,6 @@ footer h4 {
         background-size: cover;
         border-bottom-left-radius: 15px;
         border-top-left-radius: 15px;
-     }
-
-     .lesoleil > .descpopu {
-         width: 40%;
      }
      
 
@@ -1420,8 +1390,6 @@ footer h4 {
         background-size: cover;
         height: 180px;
         border-radius: 20px;
-        /* margin-top: 30px;
-        margin-left: 15px; */
         margin: 30px auto;
         display: flex;
         flex-direction: column;
@@ -1436,8 +1404,6 @@ footer h4 {
         background-size: cover;
         height: 180px;
         border-radius: 20px;
-        /* margin-top: 30px;
-        margin-left: 15px; */
         margin: 30px auto;
         display: flex;
         flex-direction: column;
@@ -1452,8 +1418,6 @@ footer h4 {
         background-size: cover;
         height: 180px;
         border-radius: 20px;
-        /* margin-top: 30px;
-        margin-left: 15px; */
         margin: 30px auto;
         display: flex;
         flex-direction: column;
@@ -1468,8 +1432,6 @@ footer h4 {
         background-size: cover;
         height: 180px;
         border-radius: 20px;
-        /* margin-top: 30px;
-        margin-left: 15px; */
         margin: 30px auto;
         display: flex;
         flex-direction: column;
@@ -1508,10 +1470,8 @@ footer h4 {
 }
 
 
-/* ++++++++++++++++++ LANDSCAPE VERSION +++++++++++++++++++++++++ */
-/* ++++++++++++++++++ LANDSCAPE VERSION +++++++++++++++++++++++++ */
-/* ++++++++++++++++++ LANDSCAPE VERSION +++++++++++++++++++++++++ */
-/* ++++++++++++++++++ LANDSCAPE VERSION +++++++++++++++++++++++++ */
+
+/* ++++++++++++++++++ LAPTOP VERSION +++++++++++++++++++++++++ */
 
 @media (min-width: 992px) and (max-width: 1439.98px) {
 
@@ -1680,9 +1640,6 @@ footer h4 {
         height: 180px;
         padding: 0px;
         border-radius: 20px;
-        /*margin-left: 20px;
-        margin-right: 20px;
-        margin-bottom: 20px;*/
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -1834,7 +1791,6 @@ footer h4 {
      }
 
      .rated {
-        /* margin-left: 30px; */
         width: 100%;
         align-content: center;
         margin-top: 0px;
@@ -2007,7 +1963,6 @@ footer h4 {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        border: 5px solid white;
         box-shadow: 0px 0px 10px rgb(235, 235, 235);
      }
     
@@ -2024,7 +1979,6 @@ footer h4 {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        border: 5px solid white;
         box-shadow: 0px 0px 10px rgb(235, 235, 235);
     }
     
@@ -2041,9 +1995,7 @@ footer h4 {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        border: 5px solid white;
         box-shadow: 0px 0px 10px rgb(235, 235, 235);
-        border-top-right-radius: 10px;
     }
     
     .notredame {
@@ -2059,9 +2011,7 @@ footer h4 {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        border: 5px solid white;
         box-shadow: 0px 0px 10px rgb(235, 235, 235);
-        border-top-right-radius: 10px;
        
     }
     
@@ -2078,7 +2028,6 @@ footer h4 {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        border: 5px solid white;
         box-shadow: 0px 0px 10px rgb(235, 235, 235);
         grid-column-start: 2;
         grid-row-start: 2;
@@ -2098,7 +2047,6 @@ footer h4 {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        border: 5px solid white;
         box-shadow: 0px 0px 10px rgb(235, 235, 235);
         grid-row-start: 2;
     }
@@ -2136,12 +2084,7 @@ footer h4 {
     }
 }
 
-
-
-/* -------------------- DESKTOP VERSION ----------------------------- */
-/* -------------------- DESKTOP VERSION ----------------------------- */
-/* -------------------- DESKTOP VERSION ----------------------------- */
-/* -------------------- DESKTOP VERSION ----------------------------- */
+/* ++++++++++++++++++ DESKTOP VERSION +++++++++++++++++++++++++ */
 
 
  @media screen and (min-width: 1440px) {
@@ -2385,7 +2328,6 @@ i {
 
 .accomodations {
     padding-left: 0px;
-    /* padding-right: 30px; */
     margin-right: 30px;
     margin-top: 30px;
     padding-top: 10px;
@@ -2404,13 +2346,6 @@ i {
     margin-top: 35px;
 }
 
-/* .choice {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 20px;
-    padding-top: 20px;
-} */
-
 .choice {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -2428,7 +2363,6 @@ i {
 .cannebiere {
     background-image: url(photos/lacannebiere.jpg);
     background-size: cover;
-    /* width: 27%; */
     height: 200px;
     padding: 0px;
     border-radius: 20px;
@@ -2811,7 +2745,6 @@ i {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    border: 5px solid white;
     box-shadow: 0px 0px 10px rgb(235, 235, 235);
     grid-row-start: 1;
     
@@ -2830,7 +2763,6 @@ i {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    border: 5px solid white;
     box-shadow: 0px 0px 10px rgb(235, 235, 235);
 }
 
@@ -2842,14 +2774,11 @@ i {
     height: 200px;
     padding: 0px;
     border-radius: 20px;
-    
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    border: 5px solid white;
     box-shadow: 0px 0px 10px rgb(235, 235, 235);
-    border-top-right-radius: 10px;
 }
 
 .notredame {
@@ -2865,10 +2794,7 @@ i {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    border: 5px solid white;
     box-shadow: 0px 0px 10px rgb(235, 235, 235);
-    border-top-right-radius: 10px;
-   
 }
 
 .frioul {
@@ -2879,12 +2805,10 @@ i {
     height: 160px;
     padding: 0px;
     border-radius: 20px;
-    
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    border: 5px solid white;
     box-shadow: 0px 0px 10px rgb(235, 235, 235);
 }
 
@@ -2902,7 +2826,6 @@ i {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    border: 5px solid white;
     box-shadow: 0px 0px 10px rgb(235, 235, 235);
 }
 
