@@ -1926,16 +1926,12 @@ footer h4 {
         border-bottom-left-radius: 15px;
         border-top-left-radius: 15px;
      }
-    
 
      .activities {
-        justify-content: space-evenly;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         width: 96%;
-        margin-left: 15px; 
-        margin-top: 0px;
-        margin-bottom: 70px;
-        display: flex;
-        flex-direction: row;                       
+        margin-left: 15px;
      }
     
      .descactivites {
@@ -1954,11 +1950,9 @@ footer h4 {
         background-image: url(photos/vieuxport.jpg);
         background-position-y: center;
         background-size: cover;
-        width: 305px;
         height: 400px;
         padding: 0px;
         border-radius: 20px;
-        margin-top: 30px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -1969,11 +1963,9 @@ footer h4 {
         background-image: url(photos/calanques.jpg);
         background-position-y: center;
         background-size: cover;
-        width: 305px;
         height: 400px;
         padding: 0px;
         border-radius: 20px;
-        margin-left: 30px;
         margin-top: 30px;
         display: flex;
         flex-direction: column;
@@ -1985,11 +1977,9 @@ footer h4 {
         background-image: url(photos/pomegues.jpg);
         background-position-y: center;
         background-size: cover;
-        width: 305px;
         height: 200px;
         padding: 0px;
         border-radius: 20px;
-        margin-left: 30px;
         margin-top: 30px;
         display: flex;
         flex-direction: column;
@@ -2001,11 +1991,9 @@ footer h4 {
         background-image: url(photos/notredame.jpg);
         background-position-y: inherit;
         background-size: cover;
-        width: 305px;
         height: 160px;
         padding: 0px;
         border-radius: 20px;
-        margin-left: 30px;
         margin-top: 30px;
         display: flex;
         flex-direction: column;
@@ -2018,11 +2006,9 @@ footer h4 {
         background-image: url(photos/frioul.jpg);
         background-position-y: center;
         background-size: cover;
-        width: 305px;
         height: 160px;
         padding: 0px;
         border-radius: 20px;
-        margin-left: 30px;
         margin-top: 30px;
         display: flex;
         flex-direction: column;
@@ -2037,11 +2023,9 @@ footer h4 {
         background-image: url(photos/longchamp.jpg);
         background-position-y: center;
         background-size: cover;
-        width: 305px;
         height: 200px;
         padding: 0px;
         border-radius: 20px;
-        margin-left: 30px;
         margin-top: 30px;
         display: flex;
         flex-direction: column;
