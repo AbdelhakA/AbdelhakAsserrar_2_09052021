@@ -375,8 +375,7 @@ input {
 }
 
 .lesoleil > .image {
-    width: 40%;
-    height: 100%;
+    width: 43%;
     background-image: url(photos/lesoleil.jpg);
     background-position-y: center;
     background-size: cover;
@@ -386,8 +385,7 @@ input {
  }
 
  .coeur > .image {
-    width: 39%;
-    height: 100%;
+    width: 43%;
     background-image: url(photos/aucoeur.jpg);
     background-position: bottom;
     background-size: cover;
@@ -396,7 +394,7 @@ input {
  }
 
  .bleuetblanc > .image {
-    width: 40%;
+    width: 43%;
     background-image: url(photos/xlarge/bbxlarge.jpg);
     background-position: right;
     background-size: cover;
@@ -430,11 +428,11 @@ input {
 }
 
 .best {
-    display: grid;
-    grid-template-columns: 100%;
-    justify-items: center;
-    margin-left: 5px;
-    margin-right: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .entete {
@@ -491,12 +489,11 @@ div.localisation {
 }
 
 .choice {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-row-gap: 15px;
-    justify-items: center;
-    margin-left: 5px;
-    margin-right: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .desc {
@@ -509,77 +506,83 @@ div.localisation {
 }
 
 .cannebiere {
-    width: 92%;
+    width: 90%;
     height: 180px;
     background-size: cover;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
     justify-content: flex-end;
     border: 5px solid white;
     box-shadow: 0px 0px 10px rgb(235, 235, 235);
 }
 
 .port {
-    width: 92%;
+    width: 90%;
     height: 180px;
     background-size: cover;
     background-position-y: -40px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
     justify-content: flex-end;
     border: 5px solid white;
     box-shadow: 0px 0px 10px rgb(235, 235, 235);
 }
 
 .mouettes {
-    width: 92%;
+    width: 90%;
     height: 180px;    
     background-size: contain;
     background-position-y: -20%;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
     justify-content: flex-end;
     border: 5px solid white;
     box-shadow: 0px 0px 10px rgb(235, 235, 235);
 }
 
 .mer {
-    width: 92%;
+    width: 90%;
     height: 180px;
     background-size: contain;
     background-position-y: -40px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
     justify-content: flex-end;
     border: 5px solid white;
     box-shadow: 0px 0px 10px rgb(235, 235, 235);
 }
 
 .panier {
-    width: 92%;
+    width: 90%;
     height: 180px;
     background-size: contain;
     padding: 0px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
     justify-content: flex-end;
     border: 5px solid white;
     box-shadow: 0px 0px 10px rgb(235, 235, 235);
 }
 
 .amina {
-    width: 92%;
+    width: 90%;
     height: 180px;
     background-size: cover;
     background-position-y: -100px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
     justify-content: flex-end;
     border: 5px solid white;
     box-shadow: 0px 0px 10px rgb(235, 235, 235);
@@ -688,7 +691,6 @@ div.localisation {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
     justify-content: center;
 }
 
@@ -892,8 +894,8 @@ input {
     padding-right: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     justify-content: space-around;
  }
 
@@ -1618,7 +1620,7 @@ footer h4 {
         margin-bottom: 35px;
     }
     .choice {
-
+        width: 92%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 30px;
@@ -2344,6 +2346,7 @@ i {
 }
 
 .choice {
+    width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 40px;
@@ -2625,6 +2628,10 @@ i {
     padding-left: 4px;
     padding-right: 50px;
     padding-top: 5px;;
+ }
+
+ .descpopu > .note {
+     margin-top: 30px;
  }
 
  .lesoleil {
