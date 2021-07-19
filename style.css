@@ -189,7 +189,7 @@ a {
 
 .research {
     border: 2px solid #F2F2F2;
-    width: 330px;
+    width: max-content;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -229,7 +229,7 @@ input {
 }
 
 .bullescriteres {
-    width: fit-content;
+    width: max-content;
     display: flex;
     flex-direction: row;
     height: 40px;
@@ -261,7 +261,7 @@ input {
 #bill {
     
     font-size: 18px;
-    margin: 0 auto;
+    margin: 10px;
     display: flex;
     justify-items: center;
     width: fit-content;
@@ -269,7 +269,7 @@ input {
 
 #child {
     font-size: 20px;
-    margin: 0 auto;
+    margin: 14px;
     display: flex;
     justify-items: center;
     width: fit-content;
@@ -277,7 +277,7 @@ input {
 
 #heart {
     font-size: 20px;
-    margin: 0 auto;
+    margin: 12px;
     display: flex;
     justify-items: center;
     width: fit-content;
@@ -285,7 +285,7 @@ input {
 
 #dog {
     font-size: 20px;
-    margin: 0 auto;
+    margin: 10px;
     display: flex;
     justify-items: center;
     width: fit-content;
@@ -1468,8 +1468,6 @@ footer h4 {
 
 }
 
-
-
 /* ++++++++++++++++++ LAPTOP VERSION +++++++++++++++++++++++++ */
 
 @media (min-width: 992px) and (max-width: 1439.98px) {
@@ -1499,7 +1497,7 @@ footer h4 {
     }
 
     .rechercher {
-        width: fit-content;
+        width: max-content;
         border-bottom-left-radius: 0px;
         border-top-left-radius: 0px;
 
@@ -2230,7 +2228,7 @@ i {
     border-bottom-right-radius: 15px; 
     border-top-right-radius: 15px;
     border-color: #0065FC;
-    width: fit-content;
+    width: max-content;
     border-bottom-left-radius: 0px; 
     border-top-left-radius: 0px;
     height: 50px;
