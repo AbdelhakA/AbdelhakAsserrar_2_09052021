@@ -1584,7 +1584,6 @@ footer h4 {
         padding-top: 48px;
         color: #0065FC;
         text-decoration: none;
-        border-top: 2px #0065FC solid;
     }
 
     .filtres {
@@ -2165,7 +2164,6 @@ li#topcorner a {
     padding-top: 42px;
     color: #0065FC;
     text-decoration: none;
-    border-top: 2px #0065FC solid;
 }
 
 li#topcorner.rubriques {
@@ -2561,7 +2559,7 @@ i {
  .stars {
      color: #0065FC;
      display: flex;
-     width: 65px;
+     width: 47px;
  }
 
  .grey {
