@@ -19,7 +19,7 @@ a:hover {
 }
 
 #page-loading-blocs-notifaction {
-    position: fixed;
+    position: fixed; 
     top: 0;
     bottom: 0;
     width: 100%;
